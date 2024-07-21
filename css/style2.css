@@ -1,0 +1,248 @@
+:root {
+    --primary: #023360;
+    --secondary: #cb3406;
+}
+
+.top-section{
+    margin-top: 12vw;
+}
+
+.top-section-content h1{
+    font-size: 3.2vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.sub-section{
+    font-size: 1.2vw;
+    padding: 1vw 0;
+    font-weight: 600;
+}
+
+.sub-section-text{
+    margin: 1.2vw 0;
+}
+
+.types{
+    margin-top: 8vw;
+}
+
+.types-header{
+    font-size: 3vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.types-content-details{
+    margin-top: 2vw;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 0;
+}
+
+.detail-content{
+    width: 45%;
+}
+
+.detail-content-heading{
+    margin-bottom: 0.6vw;
+    font-size: 1.3vw;
+}
+
+.detail-content ul{
+    padding-left: 2vw;
+}
+
+.detail-content ul li{
+    padding: 0.5vw 0;
+    font-size: 1.2vw;
+    line-height: 1.2;
+}
+
+.detail-content ul li::marker{
+    color: var(--primary);
+    font-size: 2vw;
+}
+
+
+.detail-img-wrapper{
+    max-width: 45%;
+    max-height: 30vw;
+    overflow: hidden;
+    border: 0.2vw solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5vw;
+}
+
+.detail-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5vw;
+}
+
+.set-goals{
+    margin-top: 8vw;
+}
+
+.set-goals-heading{
+    font-size: 3vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.set-goals-details{
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14vw, 1fr));
+    gap: 1vw;
+}
+
+.goals-grid{
+    padding: 1.8vw;
+    background-color: #0b3459;
+    border-radius: 1.5vw;
+    box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.goals-grid h3{
+    margin: 0.6vw 0;
+    font-size: 1.15vw;
+    color: #f9f9f9;
+}
+
+.goals-grid p{
+    font-size: 0.9vw;
+    color: #c2c2c2;
+}
+
+/****** END OF WHAT HTML STYLES *****/
+
+
+
+/****** START OF WHY HIRE HTML STYLES *****/
+
+.top-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 0;
+}
+
+.left-content{
+    font-size: 1.2vw;
+    width: 45%;
+    line-height: 1.3;
+}
+
+.faqs{
+    margin-top: 3vw;
+}
+
+.faq-header h2{
+    font-size: 2vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.faq-header p{
+    width: 60vw;
+    margin: 1vw auto;
+    font-size: 1vw;
+}
+
+.faq-details{
+    margin: 3vw auto;
+    width: 60vw;
+}
+
+.faq-item{
+    margin: 1.2vw 0;
+}
+
+.faq-question{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-icon{
+    width: 1.6vw;
+    height: 1.6vw;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.faq-answer{
+    padding-top: 1.3vw;
+    font-size: 1vw;
+    line-height: 1.3;
+    display: none;
+}
+
+.faq-answer ul{
+    padding-top: 1.3vw;
+}
+
+.faq-answer ul li{
+    margin-left: 3vw;
+}
+
+.faq-answer ul li::marker{
+    color: var(--primary);
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Show the answer when active */
+}
+
+.faq-item.active .faq-question {
+    color: #458ccf; /* Change question color when active */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg); /* Rotate the icon when active */
+    fill: #458ccf; /* Change icon color when active */
+}
+
+.faq-bottom{
+    width: 60vw;
+    margin: 0.5vw auto 0;
+    font-size: 0.8vw;
+}
+
+
+/****** HOW TO STYLES *******/
+
+.faq-title{
+    margin-top: 5vw;
+}
+
+.banner{
+    margin-top: 3vw;
+    margin-bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #023f75;
+    height: 15vh;
+}
+
+.banner-text{
+    text-transform: capitalize;
+    color: #f9f9f9;
+}
+
+.know{
+    text-decoration: none;
+    color: #458ccf;
+    font-size: 1vw;
+    text-transform: capitalize;
+}

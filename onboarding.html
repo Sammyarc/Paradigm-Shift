@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Shift | Find a Top Financial Advisor</title>
+
+        <!--------ALL CSS LINKS----->
+
+        <!-------ALTONE TRIAL FONT----->
+        <link
+        href=
+        "https://fonts.cdnfonts.com/css/altone-trial"
+        rel="stylesheet">
+
+        <!-------STYLE CSS----->
+        <link rel="stylesheet" href="css/onboarding.css">
+
+        <!-----BOXICON LINK----->
+        <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+    </head>
+    <body>
+        <main>
+            <!-----ONBOARDING FORM---->
+            <div class="container">
+                <div class="indicator">
+                    <div class="step step1">
+                        <div>1</div>
+                        <span>Age</span>
+                    </div>
+                    <div class="line line1"></div>
+                    <div class="step step2">
+                        <div>2</div>
+                        <span>Location</span>
+                    </div>
+                    <div class="line line2"></div>
+                    <div class="step step3">
+                        <div>3</div>
+                        <span>Plan</span>
+                    </div>
+                    <div class="line line3"></div>
+                    <div class="step step4">
+                        <div>4</div>
+                        <span>Income</span>
+                    </div>
+                    <div class="line line4"></div>
+                    <div class="step step5">
+                        <div>5</div>
+                        <span>Assets</span>
+                    </div>
+                    <div class="line line5"></div>
+                    <div class="step step6">
+                        <div>6</div>
+                        <span>Accounts</span>
+                    </div>
+                    <div class="line line6"></div>
+                    <div class="step step7">
+                        <div>7</div>
+                        <span>Match</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="page1 show">
+                        <form action="#" class="form">
+                            <i class='bx bxs-cake top-icon'></i>
+                            <h1>Let's begin, how old are you?</h1>
+                            <div class="form-group">
+                                <input type="number" required="required" id="age">
+                            </div>
+                            <label for="one" class="btn1" style="pointer-events: none; opacity: 0.5;"><span>
+                                Continue
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </span>
+                            </label>
+                        </form>
+                        <p class="login">Already completed this form?
+                            <a href="#">Log In</a>
+                        </p>
+                    </div>
+
+                    <div class="page2 hide">
+                        <label for="one" class="back-icon1 hide"><span><i class='bx bx-arrow-back' ></i>Back</span></label>
+                        <form action="#" class="form">
+                            <i class='bx bx-current-location top-icon'></i>
+                            <h1>Where do you live?</h1>
+                            <p>Zip Code</p>
+                            <div class="form-group">
+                                <input type="number" id="zipCodeInput" maxlength="5" placeholder="- - - - -">
+                            </div>
+                            <label for="two" class="btn2" style="pointer-events: none; opacity: 0.5;"><span>
+                                Continue
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="page3 hide">
+                        <label for="two" class="back-icon2 hide"><span><i class='bx bx-arrow-back' ></i>Back</span></label>
+                        <div class="form">
+                            <i class='bx bxs-help-circle top-icon'></i>
+                            <h1>What do you need help with?</h1>
+                            <p>Select all that apply</p>
+                            <div class="button-grid">
+                                <button class="grid-button">Retirement</button>
+                                <button class="grid-button">Home Purchase</button>
+                                <button class="grid-button">Taxes</button>
+                                <button class="grid-button">Family Planning</button>
+                                <button class="grid-button">Financial Windfall</button>
+                                <button class="grid-button">Investments</button>
+                            </div>
+                            <p class="some"><a href="#">Something else?</a></p>
+                            <label for="three" class="btn3" style="pointer-events: none; opacity: 0.5;"><span>
+                                Continue
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="page4 hide">
+                        <label for="three" class="back-icon3 hide"><span><i class='bx bx-arrow-back' ></i>Back</span></label>
+                        <form action="#" class="form">
+                            <i class='bx bx-money top-icon' ></i>
+                            <h1>What is your annual household income?</h1>
+                            <p>Approximately:</p>
+                            <span id="priceRangeText">Under $50k</span>
+                            <div class="price-range">
+                                <input type="range" id="priceRange" name="priceRange" min="0" max="100" value="0" oninput="updatePriceRange()">
+                                <div class="range-parameters">
+                                    <p>Under $50k</p>
+                                    <p>Over $600k</p>
+                                </div>
+                            </div>
+                            <label for="four" class="btn4"><span>
+                                Continue
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="page5 hide">
+                        <label for="four" class="back-icon4 hide"><span><i class='bx bx-arrow-back' ></i>Back</span></label>
+                        <div class="form">
+                            <i class='bx bx-buildings top-icon' ></i>
+                            <h1>What kind of assets do you own?</h1>
+                            <p>Select all that apply</p>
+                            <div class="button-grid">
+                                <button class="grid-button2">Cash</button>
+                                <button class="grid-button2">Real estate</button>
+                                <button class="grid-button2">Investments Accounts</button>
+                                <button class="grid-button2">Retirement Accounts</button>
+                                <button class="grid-button2">Stock Options</button>
+                                <button class="grid-button2">Other</button>
+                            </div>
+                            <label for="five" class="btn5" style="pointer-events: none; opacity: 0.5;"><span>
+                                Continue
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="page6 hide">
+                        <label for="five" class="back-icon5 hide"><span><i class='bx bx-arrow-back' ></i>Back</span></label>
+                        <form action="#" class="form">
+                            <i class='bx bx-money top-icon' ></i>
+                            <h1>Investment Accounts</h1>
+                            <p>Approximately:</p>
+                            <span id="priceRangeText">Under $25k</span>
+                            <div class="price-range">
+                                <input type="range" id="priceRange" name="priceRange" min="0" max="100" value="0" oninput="updatePriceRange()">
+                                <div class="range-parameters">
+                                    <p>Under $25k</p>
+                                    <p>Over $5M</p>
+                                </div>
+                            </div>
+                            <label for="six" class="btn6"><span>
+                                Continue
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="page7 hide">
+                        <label for="one" class="back-icon6 hide"><span><i class='bx bx-arrow-back'></i>Back</span></label>
+                        <form class="form">
+                            <h1>We have found the best advisors for you. Only one step left!</h1>
+                            <div class="form-group2">
+                                <div class="first-name">
+                                    <label for="name">First Name</label>
+                                    <div>
+                                        <input type="text" id="firstname">
+                                    <p id="firstname-error" class="error-message">Please enter your first name.</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="last-name">
+                                    <label for="name">Last Name</label>
+                                    <div>
+                                        <input type="text" id="lastname">
+                                    <p id="lastname-error" class="error-message">Please enter your last name.</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="email-field">
+                                    <label for="email">Email</label>
+                                    <div>
+                                        <input type="email" id="email">
+                                    <p id="email-error" class="error-message">Please enter a valid email address.</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="phone-number">
+                                    <label for="phone">Phone Number</label>
+                                    <div>
+                                        <div class="phone-input">
+                                            <select id="country-code"></select>
+                                            <div class="phone-container">
+                                                <span id="selected-country-code"></span>
+                                                <input type="tel" id="phone-number">
+                                            </div>
+                                        </div>
+                                        <p id="phone-error" class="error-message">Enter a valid phone number.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="terms">By clicking the button below, you acknowledge our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+                            <label for="seven" class="btn7" >
+                                See Advisor Matches
+                                <i class='bx bx-arrow-back bx-flip-horizontal'></i>
+                            </label>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-------JS LINKS---->
+        <script src="js/onboarding.js"></script>
+       
+    </body>
+</html>
