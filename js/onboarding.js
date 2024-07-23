@@ -562,6 +562,11 @@ function updatePriceRange() {
     const range = document.getElementById('priceRange');
     const rangeText = document.getElementById('priceRangeText');
     const value = range.value;
+    const min = range.min;
+    const max = range.max;
+    const percentage = (value - min) / (max - min) * 100;
+    range.style.setProperty('--thumb-position', `${percentage}%`);
+    range.style.setProperty('background', `linear-gradient(to right, #105480 ${percentage}%, #fff ${percentage}%)`);
 
     if (value <= 0) {
         rangeText.textContent = 'Under $50k';
@@ -585,5 +590,62 @@ function updatePriceRange() {
         rangeText.textContent = '$550k - $600k';
     } else {
         rangeText.textContent = 'Over $600k';
+    }
+}
+
+
+function updatePriceRange2() {
+    const range2 = document.getElementById('priceRange2');
+    const rangeText2 = document.getElementById('priceRangeText2');
+    const value2 = range2.value;
+    const min = range2.min;
+    const max = range2.max;
+    const percentage = (value2 - min) / (max - min) * 100;
+    range2.style.setProperty('--thumb-position', `${percentage}%`);
+    range2.style.setProperty('background', `linear-gradient(to right, #105480 ${percentage}%, #fff ${percentage}%)`);
+
+    if (value2 <= 0) {
+        rangeText2.textContent = 'Under $25k';
+    } else if (value2 <= 5) {
+        rangeText2.textContent = '$25k - $50k';
+    } else if (value2 <= 10) {
+        rangeText2.textContent = '$50k - $100k';
+    } else if (value2 <= 15) {
+        rangeText2.textContent = '$100k - $150k';
+    } else if (value2 <= 20) {
+        rangeText2.textContent = '$150k - $200k';
+    } else if (value2 <= 25) {
+        rangeText2.textContent = '$200k - $250k';
+    } else if (value2 <= 30) {
+        rangeText2.textContent = '$250k - $300k';
+    } else if (value2 <= 35) {
+        rangeText2.textContent = '$300k - $350k';
+    } else if (value2 <= 40) {
+        rangeText2.textContent = '$350k - $400k';
+    } else if (value2 <= 45) {
+        rangeText2.textContent = '$400k - $450k';
+    } else if (value2 <= 50) {
+        rangeText2.textContent = '$450k - $500k';
+    } else if (value2 <= 55) {
+        rangeText2.textContent = '$500k - $550k';
+    } else if (value2 <= 60) {
+        rangeText2.textContent = '$550k - $600k';
+    } else if (value2 <= 65) {
+        rangeText2.textContent = '$600k - $650k';
+    } else if (value2 <= 70) {
+        rangeText2.textContent = '$650k - $700k';
+    } else if (value2 <= 75) {
+        rangeText2.textContent = '$700k - $750k';
+    } else if (value2 <= 80) {
+        rangeText2.textContent = '$750k - $800k';
+    } else if (value2 <= 85) {
+        rangeText2.textContent = '$800k - $850k';
+    } else if (value2 <= 90) {
+        rangeText2.textContent = '$850k - $900k';
+    } else if (value2 <= 95) {
+        rangeText2.textContent = '$900k - $950k';
+    }       
+     else {
+        rangeText2.textContent = 'Over $1M';
     }
 }

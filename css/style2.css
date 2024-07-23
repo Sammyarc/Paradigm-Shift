@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('/fonts/AltoneTrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 :root {
-    --primary: #023360;
-    --secondary: #cb3406;
+    --primary: #105480;
+    --secondary: #f25100;
 }
 
 .top-section{
@@ -103,8 +112,8 @@
 }
 
 .goals-grid{
-    padding: 1.8vw;
-    background-color: #0b3459;
+    padding: 1.2vw;
+    background-color: #105480;
     border-radius: 1.5vw;
     box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
     position: relative;
@@ -218,6 +227,8 @@
     font-size: 0.8vw;
 }
 
+/****** END OF WHY HIRE HTML STYLES *****/
+
 
 /****** HOW TO STYLES *******/
 
@@ -245,4 +256,82 @@
     color: #458ccf;
     font-size: 1vw;
     text-transform: capitalize;
+}
+
+/******END OF HOW TO STYLES *******/
+
+.team-section{
+    margin-top: 12vw;
+}
+
+.team-section h1{
+    font-size: 3.2vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team-container{
+    margin: 5vw auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    gap: 2vw;
+    width: 70vw;
+}
+
+.team-card{
+    position: relative;
+    height: 25vw;
+    overflow: hidden;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+.team-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 1vw;
+    text-align: center;
+}
+
+.team-card:hover .team-info {
+    opacity: 1;
+}
+
+.team-info h3{
+    font-size: 1.5vw;
+}
+
+.member-title{
+    margin: 1vw 0;
+    font-size: 1.1vw;
+}
+
+.m-role{
+    font-size: 0.9vw;
+    line-height: 1.3;
 }
