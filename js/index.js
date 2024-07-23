@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animations = {
         'lottie-container': 'assets/Animation1.json',
         'how1': 'assets/Animation2.json',
+        'story': 'assets/Animation2.json',
         'how2': 'assets/Animation6.json',
         'how3': 'assets/Animation4.json',
         'how4': 'assets/Animation5.json',

@@ -299,7 +299,6 @@
 }
 
 
-
 .team-info {
     position: absolute;
     top: 0;
@@ -334,4 +333,36 @@
 .m-role{
     font-size: 0.9vw;
     line-height: 1.3;
+}
+
+/******* END OF TEAM STYLES  *****/
+
+/******** OUR STORY STYLES   *****/
+
+.story-intro{
+    margin-top: 12vw;
+}
+
+.story-intro h1{
+    font-size: 3.2vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.text-wrap{
+    margin-top: 1vw;
+}
+
+.float{
+    float: right;
+    margin-left: 1.2vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    shape-outside: circle(50%); /* Defines a circular shape for text wrap */
+    shape-margin: 1vw; /* Adds margin around the shape */
+}
+
+.text-wrap p{
+    text-align: justify;
 }

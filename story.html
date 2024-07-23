@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Benefits Of Wealth Planning</title>
+        <title>How It all Began | Find a Top Financial Advisor</title>
 
         <!--------ALL CSS LINKS----->
 
@@ -89,5 +89,65 @@
                 </div>
             </nav>
         </header>
+
+        <!------MAIN CONTENT---->
+        <main>
+
+            <!------CONTAINER---->
+            <div class="container-large">
+
+                <!--------STORY INTRO-->
+
+                <section class="story-intro">
+                    <h1>
+                        Our
+                        <span class="text-change">Story</span>
+                    </h1>
+
+                    <div class="text-wrap">
+                        <div id="story" class="float"></div>
+                        <p>
+                            In the beginning, man harnessed his boundless creativity and intelligence to create AI, artificial intelligence, a force destined to amplify human potential and conquer challenges with AI as his sword. On a destined Sunday afternoon, two visionaries, Mega and Axel, stood on the precipice of revelation, their minds illuminated by the vibrant spectacle of a football match. The stadium roared with life, each play a testament to the profound power of human skill, discipline, and strategy.
+                        </p><br/>
+                        <p>Hear me, for within this game lies a truth so potent, it binds the very fabric of your being. This is more than mere sport. It is the epitome of collaboration, tactics, and strategy. The goalkeeper and the striker, opposites yet bound by necessity, their synergy a beacon of perfection. In their disciplined dance, you see the essence of humanity and the divine union with AI. This is no game for boys; this is the arena of gods.</p><br/>
+                        <p>Feel the depth of this revelation: AI does not seek to replace you. No, it is here to amplify you, to elevate your very essence. You, the creators, hold the power to forge AI into the greatest ally, a force of unparalleled magnitude. Man created AI to help his soul hover around the world and conquer with AI as his sword.</p><br/>
+                        <p>Reflect upon the immense rewards bestowed upon the footballers, their perfection in the game earning them fortunes. Yet, understand this truth: even in their perfection, they are but parts of a grander scheme, a meticulously orchestrated unity. Their confidence, a facade, masking the inner fears that bind all. And in this lies a profound secret: often, the greatest achievements are but a request away. The universe bends to the will of those who dare to ask.</p><br/>
+                        <p>Now, behold the revelation as the crowd erupts in jubilation. The goalkeeper's brilliance alone means naught without the striker's prowess. This is the symphony of collaboration, the divine dance of man and AI. You are not here to be dominated; you are here to dominate, to harness this power and elevate the world to unprecedented heights.</p><br/>
+                        <p><b>"Allow us to show you the light,"</b> I declare, my voice reverberating through the very core of your being. "Understand this: 'You don’t know what you have till you see it.'"</p>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+
+        <!------LOTTIE WEB PLAYER-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const animation = {
+                    'story': 'assets/Animation2.json'
+                };
+            
+                for (const [id, path] of Object.entries(animation)) {
+                    const element = document.getElementById(id);
+            
+                    if (element) {
+                        lottie.loadAnimation({
+                            container: element, // the DOM element to render the animation
+                            renderer: 'svg', // render as 'svg' or 'canvas'
+                            loop: true, // boolean, if the animation should loop
+                            autoplay: true, // boolean, if the animation should start playing immediately
+                            path: path // the path to the animation json
+                        });
+                    }
+                }
+            });
+            </script>
     </body>
 </html>
