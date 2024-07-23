@@ -33,7 +33,7 @@
 }
 
 .types{
-    margin-top: 8vw;
+    margin-top: 6vw;
 }
 
 .types-header{
@@ -202,6 +202,7 @@
 
 .faq-answer ul li{
     margin-left: 3vw;
+    padding: 0.5vw 0;
 }
 
 .faq-answer ul li::marker{
@@ -353,16 +354,28 @@
     margin-top: 1vw;
 }
 
-.float{
+#story1{
     float: right;
     margin-left: 1.2vw;
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
     shape-outside: circle(50%); /* Defines a circular shape for text wrap */
-    shape-margin: 1vw; /* Adds margin around the shape */
 }
 
 .text-wrap p{
     text-align: justify;
+}
+
+#story2{
+    float: left;
+    margin-right: 1.2vw;
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    shape-outside: circle(50%); /* Defines a circular shape for text wrap */
+}
+
+.medium-text{
+    font-size: 1.3vw;
 }

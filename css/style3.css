@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('/fonts/AltoneTrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root {
+    --primary: #105480;
+    --secondary: #f25100;
+}
+
+.faq{
+    margin-top: 12vw;
+}
+
+
+.faq h1{
+    font-size: 3.2vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.faq-details{
+    margin: 3vw auto;
+    width: 60vw;
+}
+
+.faq-item{
+    margin: 1.2vw 0;
+}
+
+.faq-question{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-icon{
+    width: 1.6vw;
+    height: 1.6vw;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.faq-answer{
+    padding-top: 1.3vw;
+    font-size: 1vw;
+    line-height: 1.3;
+    display: none;
+}
+
+
+.faq-answer ul li, .faq-answer ol li{
+    margin-left: 3vw;
+    padding: 0.5vw 0;
+}
+
+.faq-answer ul li::marker{
+    color: var(--primary);
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Show the answer when active */
+}
+
+.faq-item.active .faq-question {
+    color: #458ccf; /* Change question color when active */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg); /* Rotate the icon when active */
+    fill: #458ccf; /* Change icon color when active */
+}
+
+.know{
+    text-decoration: none;
+    color: #458ccf;
+    font-size: 1vw;
+    text-transform: capitalize;
+}
+
+.faq-bottom{
+    width: 60vw;
+    margin: 0.5vw auto 0;
+    font-size: 0.8vw;
+}
