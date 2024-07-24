@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const page1 = document.querySelector('.page1');
     const page2 = document.querySelector('.page2');
     const backIcon1 = document.querySelector('.back-icon1');
+    
 
     /*******STEP ONE VALIDATION ***/
 
@@ -527,11 +528,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
     // Form submission
     btn7.addEventListener('click', function (event) {
         event.preventDefault();
         if (validateForm()) {
-            window.location.href = 'index.html';
+            sendMail1();
         }
     });
 
@@ -555,6 +557,60 @@ document.addEventListener('DOMContentLoaded', () => {
         step7.style.color = 'var(--primary)';
         step7Text.style.color = '#000';
     });
+    
+    function sendMail1() {
+         // Collect data from page 1
+         const age = document.getElementById('age').value;
+    
+         // Collect data from page 2
+         const zipCode = document.getElementById('zipCodeInput').value;
+    
+         // Collect data from page 3
+         const selectedButtons1 = document.querySelectorAll('.page3 .grid-button.selected');
+         const helpTopics = Array.from(selectedButtons1).map(button => button.textContent);
+    
+         // Collect data from page 4
+         const annualIncome = document.getElementById('priceRangeText').textContent;
+    
+         // Collect data from page 5
+         const selectedButtons2 = document.querySelectorAll('.page5 .grid-button2.selected');
+         const assets = Array.from(selectedButtons2).map(button => button.textContent);
+    
+         // Collect data from page 6
+         const investmentAmount = document.getElementById('priceRangeText2').textContent;
+    
+         // Collect data from page 7
+         const firstName = document.getElementById('firstname').value;
+         const lastName = document.getElementById('lastname').value;
+         const email = document.getElementById('email').value;
+         const phoneNumber = document.getElementById('phone-number').value;
+         const countryCode = document.getElementById('selected-country-code').textContent;
+    
+    
+        var params = {
+           age: age,
+                zipCode: zipCode,
+                helpTopics: helpTopics,
+                annualIncome: annualIncome,
+                assets: assets,
+                investmentAmount: investmentAmount,
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                phoneNumber: phoneNumber,
+                countryCode: countryCode
+        };
+    
+        const serviceID = "service_fqmu7bu";
+        const templateID = "template_pkv9wj5";
+    
+        emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+                // Redirect to index.html
+                window.location.href = "index.html";
+            })
+    }
 
 });
 
@@ -649,3 +705,4 @@ function updatePriceRange2() {
         rangeText2.textContent = 'Over $1M';
     }
 }
+

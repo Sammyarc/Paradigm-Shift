@@ -213,7 +213,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     bottom: 0;
     transform: translate(-50%,-50%);
     background-color: var(--primary);
-    padding: 1vw 2vw; /* Scaled padding */
+    padding: 0.7vw 2vw; /* Scaled padding */
     color: #fcf6f6;
     cursor: pointer;
     border-radius: 0.5vw; /* Scaled border radius */
@@ -406,7 +406,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     display: flex;
     flex-direction: column;
     width: 25vw;
-    margin: 0.5vw auto;
+    margin: 1vw auto 0;
 }
 
 .form-group2 label{
@@ -416,7 +416,7 @@ input[type="number"]:hover, input[type="number"]:focus{
 .first-name, .last-name, .email-field, .phone-number{
     display: flex;
     justify-content: space-between;
-    margin: 0.8vw 0 0 0;
+    margin: 1vw 0 0 0;
 }
 
 input[type="text"], input[type="email"]{
@@ -501,7 +501,6 @@ input[type="email"]:hover, input[type="email"]:focus{
 .error-message {
     color: red;
     display: none;
-    font-size: 0.6vw;
 }
 
 

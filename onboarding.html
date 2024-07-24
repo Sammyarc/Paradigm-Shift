@@ -15,6 +15,17 @@
             href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
             rel='stylesheet'>
 
+        <!------EMAIL JS LINK---->
+        
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("P8l3b3F9tQtMzEKxH");
+            })();
+        </script>
+
     </head>
     <body>
         <main>
@@ -291,7 +302,7 @@
                                         <label for="email">Email:</label>
                                         <div>
                                             <input type="email" id="email">
-                                            <p id="email-error" class="error-message">Please enter a valid email address.</p>
+                                            <p id="email-error" class="error-message"> Enter a valid email address.</p>
                                         </div>
                                     </div>
 
