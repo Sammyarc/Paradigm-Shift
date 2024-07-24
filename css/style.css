@@ -42,7 +42,7 @@ html {
 
 body {
     position: relative;
-   background-color: #faf9f5;
+    background-image: linear-gradient(to left top, #ecdff5, #f2ebf7, #e3f6f3, #e4f2f5, #e8edf1, #e7ebef, #e6e9ee, #e5e7ec, #e0e7ef, #dae7f1, #edecfb, #f3f2fb);
     margin: 0;
 }
 
