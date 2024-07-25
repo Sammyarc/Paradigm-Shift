@@ -809,6 +809,16 @@ header {
     overflow: hidden;
 }
 
+.brand-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: linear-gradient(270deg, #f5edfb, rgba(11, 17, 32, 0) 20.31%, rgba(11, 17, 32, 0) 78.65%, #e4ebf3 99.48%);
+}
+
 .carousel-left,
 .carousel-right {
     display: flex;
