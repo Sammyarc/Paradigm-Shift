@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('/fonts/AltoneTrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Altone Trial", sans-serif;
+    font-size: 1.2vw;
+}
+
+:root {
+    --primary: #105480;
+    --secondary: #f25100;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.2vw; /* Scaled font size */
+    text-transform: capitalize;
+} 
+
+
+body{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.left-details{
+    width: 40vw;
+}
+
+.logo{
+    font-size: 3vw;
+}
+
+.l-minitext{
+    font-size: 3.5vw;
+    margin-top: 10vw;
+    text-transform: capitalize;
+}
+
+.login-form{
+    width: 40vw;
+    background-color: #fff;
+    box-shadow: 1vw 1vw 3vw rgba(73, 73, 73, 0.1);
+    padding: 2vw;
+    border-radius: 1.5vw;
+}
+
+.login-logo{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.login-form h2{
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.w-paragraph{
+    margin-top: 0.5vw;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.form-group{
+    margin: 1.5vw auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+}
+
+input[type="email"], input[type="password"] {
+    padding: 0.6vw 1vw;
+    border: 0.1vw solid darkgray;
+    border-radius: 0.3vw;
+    outline: none;
+    font-family: 'Altone Trial';
+    font-size: 1vw;
+    width: 20vw;
+}
+
+input[type="email"]:hover, input[type="password"]:hover{
+    border: 0.15vw solid var(--primary);
+}
+
+input[type="email"]:focus, input[type="password"]:focus{
+    border: 0.15vw solid var(--primary);
+}
+
+.forgot{
+    margin: 1.5vw 3.5vw;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    margin: 2vw auto;
+    padding: 0.8vw 2vw;
+    font-size: 1.1vw;
+    font-family: 'Altone Trial';
+    background-color: var(--primary);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}

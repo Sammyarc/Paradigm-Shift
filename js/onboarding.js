@@ -20,18 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
         .parentNode
         .appendChild(errorMessage1);
 
-    ageInput.addEventListener('input', function () {
-        const age = parseInt(ageInput.value, 10);
-        if (age > 18) {
-            continueButton.style.pointerEvents = 'auto';
-            continueButton.style.opacity = '1';
-            errorMessage1.style.display = 'none';
-        } else {
-            continueButton.style.pointerEvents = 'none';
-            continueButton.style.opacity = '0.5';
-            errorMessage1.style.display = 'block';
+        function validateAge() {
+            const age = parseInt(ageInput.value, 10);
+            if (age > 18) {
+                continueButton.style.pointerEvents = 'auto';
+                continueButton.style.opacity = '1';
+                errorMessage1.style.display = 'none';
+            } else {
+                continueButton.style.pointerEvents = 'none';
+                continueButton.style.opacity = '0.5';
+                errorMessage1.style.display = 'block';
+            }
         }
-    });
+    
+        // Validate on input (while typing)
+        ageInput.addEventListener('input', validateAge);
+    
+        // Validate on blur (when leaving the field)
+        ageInput.addEventListener('blur', validateAge);
 
     continueButton.addEventListener('click', function (e) {
         const age = parseInt(ageInput.value, 10);
@@ -80,18 +86,24 @@ document.addEventListener('DOMContentLoaded', () => {
         .parentNode
         .appendChild(errorMessage2);
 
-    zipCodeInput.addEventListener('input', function () {
-        const zipCode = zipCodeInput.value;
-        if (zipCode.length === 5 && /^[0-9]+$/.test(zipCode)) {
-            continueButton2.style.pointerEvents = 'auto';
-            continueButton2.style.opacity = '1';
-            errorMessage2.style.display = 'none';
-        } else {
-            continueButton2.style.pointerEvents = 'none';
-            continueButton2.style.opacity = '0.5';
-            errorMessage2.style.display = 'block';
+        function validateZipCode() {
+            const zipCode = zipCodeInput.value;
+            if (zipCode.length === 5 && /^[0-9]+$/.test(zipCode)) {
+                continueButton2.style.pointerEvents = 'auto';
+                continueButton2.style.opacity = '1';
+                errorMessage2.style.display = 'none';
+            } else {
+                continueButton2.style.pointerEvents = 'none';
+                continueButton2.style.opacity = '0.5';
+                errorMessage2.style.display = 'block';
+            }
         }
-    });
+    
+        // Validate on input (while typing)
+        zipCodeInput.addEventListener('input', validateZipCode);
+    
+        // Validate on blur (when leaving the field)
+        zipCodeInput.addEventListener('blur', validateZipCode);
 
     continueButton2.addEventListener('click', function (e) {
         const zipCode = zipCodeInput.value;
@@ -477,7 +489,12 @@ document.addEventListener('DOMContentLoaded', () => {
         selectedCountryCodeSpan.textContent = countryCodeSelect.value;
     }
 
-    // Validate inputs on input change
+    // Validate inputs on blur (when the user leaves the input field)
+    firstname.addEventListener('blur', validateFirstName);
+    lastname.addEventListener('blur', validateLastName);
+    email.addEventListener('blur', validateEmailInput);
+
+     // Validate on input (while typing)
     firstname.addEventListener('input', validateFirstName);
     lastname.addEventListener('input', validateLastName);
     email.addEventListener('input', validateEmailInput);
