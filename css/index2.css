@@ -35,7 +35,7 @@ html {
 }
 
 :root {
-    --primary: #0d304a;
+    --primary: #333333;
     --secondary: #f25100;
 }
 
@@ -66,10 +66,25 @@ a {
 }
 
 .btn-primary {
-    border: 0.1vw solid #d6b556;
-    border-radius: 0.5vw;
-    background-color: #d6b556;
+    border: 0.1vw solid #333333;
+    border-radius: 50px;
+    background-color: #333333;
     color: #fcf6f6;
+    padding: 0.1vw;
+    height: 3.5vw;
+    width: max-content;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.h-btn-primary {
+    border: 0.1vw solid #ffff;
+    border-radius: 50px;
+    background-color: #ffff;
+    color: #333333;
     padding: 0.1vw;
     height: 3.5vw;
     width: max-content;
@@ -84,7 +99,23 @@ a {
     z-index: 0;
     background-image: radial-gradient(circle closest-side at 50% 50%, #fcf6f6, rgba(37, 56, 119, 0));
     opacity: 0;
-    border-radius: 0.5vw;
+    border-radius: 50px;
+    width: 7vw;
+    height: 7vw;
+    transition: transform 0.2s, opacity 0.2s;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    transform: translate(-50%, 50%);
+}
+
+.h-gradient-primary {
+    z-index: 0;
+    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(37, 56, 119, 0)), #fcf6f6;
+    opacity: 0;
+    border-radius: 50px;
     width: 7vw;
     height: 7vw;
     transition: transform 0.2s, opacity 0.2s;
@@ -97,19 +128,36 @@ a {
 }
 
 .reg {
-    background: #d6b556;
+    background: #333333;
     padding: 0.5vh 1.5vw;
     color: #fcf6f6;
     outline: none;
     font-family: "Altone Trial", sans-serif;
     font-size: 1.2vw;
-    border: 0.1vw solid #d6b556;
-    border-radius: 0.5vw;
+    border: 0.1vw solid #333333;
+    border-radius: 50px;
     z-index: 2;
     height: 100%;
     position: relative;
     cursor: pointer;
 }
+
+.h-reg {
+    background: #ffff;
+    padding: 0.5vh 1.5vw;
+    color: #333333;
+    font-weight: bold;
+    outline: none;
+    font-family: "Altone Trial", sans-serif;
+    font-size: 1.2vw;
+    border: 0.1vw solid #fff;
+    border-radius: 50px;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
 
 .btn-primary:hover .gradient-primary {
     opacity: 1;
@@ -225,7 +273,7 @@ header {
 .hero-section {
     padding-top: 13vw;
     height: 58vw;
-    background: url("/assets/hero-img.jpg") no-repeat center center/cover;
+    background: url("/assets/download.jpeg") no-repeat center center/cover;
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -236,39 +284,42 @@ header {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 70%;
-    background-image: linear-gradient(to right, #0d304a, rgba(13, 48, 74, 0));
+    width: 100%;
+    background-image: linear-gradient(to bottom, #000000, #77777700);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     padding: 1vw;
 }
 
 .hero-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50vw;
+    margin: auto 5vw 5vw;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
 }
 
-.sub-header {
-    text-transform: uppercase;
-    margin-bottom: 1vw;
-    font-size: 1.4vw;
-    font-weight: 600;
+.hero-mini-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    z-index: 10;
 }
 
 .hero-content h1 {
     font-size: 4vw;
     width: 45vw;
+    color: #fff;
 }
 
 .hero-paragraph {
     margin-top: 0.5vw;
     line-height: 1.5;
     width: 40vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
+    color: #fff;
 }
 
 /****** BRAND SECTION STYLES  *****/
@@ -285,20 +336,17 @@ header {
     color: rgba(27, 38, 50, .6);
     width: fit-content;
     position: relative;
-    /* Required for the pseudo-element to be positioned relative to this element */
 }
 
 .brand-content h2::after {
     content: '';
     display: block;
     width: 70%;
-    /* Set the width of the border here */
-    border-bottom: 0.25vw solid #d6b556;
+    border-bottom: 0.25vw solid #000000;
     position: absolute;
     left: 0;
-    /* Aligns the border to the left of the element */
     bottom: 0;
-    /* Positions the border at the bottom of the element */
+
 }
 
 .brand-container {
@@ -695,7 +743,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     display: block;
     width: 70%;
     /* Set the width of the border here */
-    border-bottom: 0.25vw solid #d6b556;
+    border-bottom: 0.25vw solid #333333;
     position: absolute;
     left: 0;
     /* Aligns the border to the left of the element */
@@ -814,7 +862,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     display: block;
     width: 70%;
     /* Set the width of the border here */
-    border-bottom: 0.25vw solid #d6b556;
+    border-bottom: 0.25vw solid #333333;
     position: absolute;
     left: 0;
     /* Aligns the border to the left of the element */
@@ -950,7 +998,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     border: none;
     outline: none;
     color: #fff;
-    background-color: #d6b556;
+    background-color: #333333;
     font-size: 1.1vw;
     border-radius: 0.5vw;
     cursor: pointer;
@@ -974,7 +1022,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     border: none;
     outline: none;
     color: #fff;
-    background-color: #d6b556;
+    background-color: #333333;
     font-size: 1vw;
     border-radius: 0.5vw;
     cursor: pointer;
@@ -1036,7 +1084,7 @@ input[type="number"]:hover, input[type="number"]:focus{
     border: none;
     outline: none;
     color: #fff;
-    background-color: #d6b556;
+    background-color: #333333;
     font-size: 1vw;
     font-weight: 600;
     border-radius: 0.5vw;
@@ -1047,7 +1095,7 @@ input[type="number"]:hover, input[type="number"]:focus{
 
 footer {
     padding: 3vw 0;
-    background-color: #011f3de4;
+    background-color: #333333;
 }
 
 .footer-container {
@@ -1063,16 +1111,16 @@ footer {
 }
 
 .footer-btn {
-    color: #faf9f5;
-    background-color: #d6b556;
+    color: #333333;
+    background-color: #fff;
     padding: 1vw 3vw;
     font-size: 1.2vw;
     height: 3.5vw;
 }
 
 .footer-btn:hover {
-    background-color: #d6b556;
-    color: #faf9f5;
+    background-color: #f4f4f4;
+    color: #1d1c1c;
 }
 
 .link-header {
@@ -1101,9 +1149,9 @@ footer {
 .social-icon {
     padding: 0.7vw;
     border-radius: 100%;
-    background-color: #d6b556;
+    background-color: #ffff;
     font-size: 1.35vw;
-    color: #fcf6f6;
+    color: #333333;
 }
 
 .footer-bottom {
