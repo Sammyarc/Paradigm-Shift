@@ -129,7 +129,7 @@ a {
 
 .reg {
     background: #333333;
-    padding: 0.5vh 1.5vw;
+    padding: 0.25vh 1.5vw;
     color: #fcf6f6;
     outline: none;
     font-family: "Altone Trial", sans-serif;
@@ -144,7 +144,7 @@ a {
 
 .h-reg {
     background: #ffff;
-    padding: 0.5vh 1.5vw;
+    padding: 0.3vh 1.5vw;
     color: #333333;
     font-weight: bold;
     outline: none;
@@ -192,14 +192,11 @@ a {
 /* nav styles */
 
 header {
-    background-color: #f9f9f9;
-    box-shadow: 1vw 1vw 3vw rgba(73, 73, 73, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: transparent; /* Ensures background is transparent */
+    position: relative; /* Normal flow of the document */
     z-index: 100;
 }
+
 
 .nav {
     display: flex;
@@ -213,31 +210,31 @@ header {
 .logo {
     font-size: 1.7vw;
     font-weight: 700;
+    color: #ffff;
 }
 
 .nav__link a {
     display: inline-block;
     padding: 0.15vw 2vw;
     font-size: 1.2vw;
+    color: #ffff;
 }
 
 .nav__link a:hover {
-    color: var(--primary);
+    color: #b9b9b9;
 }
 
 .nav__link a:hover .d-toggle {
-    fill: var(--primary);
+    fill: #b9b9b9;
 }
 
-.dropdown-content a {
-    padding: 1.2vw 2vw;
-}
 
 .d-toggle {
     margin-left: 0.1vw;
     vertical-align: middle;
     width: 1.4vw;
     height: 1.4vw;
+    fill: #ffff;
 }
 
 .dropdown {
@@ -268,14 +265,16 @@ header {
     display: block;
 }
 
+.dropdown-content a:hover{
+    color: #3a3939;
+}
+
+
 /* HERO STYLES */
 
 .hero-section {
-    padding-top: 13vw;
-    height: 58vw;
-    background: url("/assets/download.jpeg") no-repeat center center/cover;
-    display: flex;
-    justify-content: flex-start;
+    height: 50vw;
+    background: url("/assets/roche-ht-content02-6technologies.png") no-repeat center center/cover;
     position: relative;
 }
 
@@ -294,10 +293,10 @@ header {
 
 .hero-content {
     display: flex;
-    margin: auto 5vw 5vw;
     justify-content: space-between;
     align-items: flex-end;
-    width: 100%;
+    width: 90%;
+    margin: 20vw auto;
 }
 
 .hero-mini-content{
@@ -808,14 +807,15 @@ input[type="number"]:hover, input[type="number"]:focus{
     text-transform: uppercase;
     color: #faf9f5;
     font-size: 1.7vw;
+    margin-top: 1vw;
 }
 
 .who-card:hover .who-info {
-    bottom: 2vw;
+    bottom: 2.5vw;
 }
 
 .who-info p {
-    margin-top: 2vw;
+    margin-top: 2.2vw;
     width: 12vw;
     color: #faf9f5;
 }
