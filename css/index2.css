@@ -274,8 +274,9 @@ header {
 
 .hero-section {
     height: 50vw;
-    background: url("/assets/roche-ht-content02-6technologies.png") no-repeat center center/cover;
+    background: url("/assets/img.jpg") no-repeat center center/cover;
     position: relative;
+    
 }
 
 .overlay {
@@ -284,7 +285,7 @@ header {
     top: 0;
     bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to bottom, #000000, #77777700);
+    background-image: linear-gradient(to bottom, #151515, #88888800);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,10 +294,9 @@ header {
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     width: 90%;
-    margin: 20vw auto;
+    margin: 15vw auto;
 }
 
 .hero-mini-content{
