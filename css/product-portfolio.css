@@ -1,0 +1,283 @@
+.nav__link a {
+    color: #333333;
+}
+
+.nav__link a:hover {
+    color: #4d4d4d;
+}
+
+.nav__link a:hover .d-toggle {
+    fill: #4d4d4d;
+}
+
+
+.d-toggle {
+    fill: #333333;
+}
+
+.header-btn{
+    background: #334097;
+    padding: 0.9vw 1.5vw;
+    color: #fcf6f6;
+    outline: none;
+    font-family: "Altone Trial", sans-serif;
+    font-size: 1.1vw;
+    border: 0.1vw solid #fff;
+    border-radius: 1vw;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Portfolio intro */
+
+.portfolio-header {
+    position: relative;
+    width: 100%;
+    height: 25vw; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(67, 67, 67, 0.196); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.portfolio-content {
+    position: relative;
+    z-index: 2; /* Ensures content appears above overlay */
+    text-align: center;
+    color: #fff;
+    padding: 0 1vw;
+}
+
+.portfolio-title {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.portfolio-subtitle {
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-header {
+        height: 40vw;
+    }
+
+    .portfolio-title {
+        font-size: 4vw;
+    }
+
+    .portfolio-subtitle {
+        font-size: 1.5vw;
+    }
+}
+
+/* EDUCATION FINANCIAL GROWTH */
+
+.education-financial-growth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+    background-color: #F5F5F5;
+  }
+  
+  .image-container {
+    width: 40vw;
+    height: 40vw;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .text-container {
+   width: 45vw;
+  }
+  
+  .text-container h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    line-height: 1.3;
+  }
+  
+  .text-container p {
+    font-size: 1.2vw;
+    color: #555;
+    margin-bottom: 1vw;
+    line-height: 1.8;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-container h2 {
+      font-size: 2rem;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+    }
+  }
+  
+/* Growth Portfolio */
+
+.growth-portfolio {
+    background-color: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+    color: #2e7d32;
+}
+
+.growth-portfolio .container {
+    width: 45vw;
+}
+
+.growth-portfolio h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    color: #1b5e20;
+}
+
+.growth-portfolio p {
+    font-size: 1.2vw;
+    color: #555;
+    margin-bottom: 1vw;
+    line-height: 1.6;
+}
+
+.growth-portfolio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.growth-portfolio li {
+    font-size: 1.1vw;
+    margin: 1vw 1vw;
+    text-align: left;
+    color: #333;
+}
+
+.growth-portfolio li::before {
+    content: "✔";
+    color: #1b5e20;
+    margin-right: 0.5vw;
+    font-size: 1.2vw;
+}
+
+.img-container {
+    width: 40vw;
+    height: 40vw;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Income Portfolio */
+
+.income-portfolio {
+    background-color: #F5F5F5;
+    padding: 5vw;
+}
+
+.income-portfolio h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    color: #6d4c41;
+}
+
+.income-portfolio p {
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 3vw;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the icon within the card */
+    overflow: hidden;
+}
+
+.feature-card h3 {
+    font-size: 1.4vw;
+    color: #4e342e;
+    margin-bottom: 1vw;
+}
+
+.feature-card p {
+    font-size: 1.1vw;
+    color: #5d4037;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Icon Styles */
+.icon {
+    position: absolute;
+    top: -1vw;
+    right: -4vw;
+    width: 12vw;
+    height: 10vw;
+    color: #1a237e; /* Slightly dim */
+    opacity: 0.3;
+}
+
+
+
+ 

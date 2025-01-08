@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Shift - Product Portfolio</title>
+
+    <!--------ALL CSS LINKS----->
+
+        <!-------STYLE CSS----->
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/product-portfolio.css">
+    <!-- Boxicons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+        <!-------FAVICON -->
+        <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
+
+</head>
+<body>
+
+    <!-----HEADER AREA---->
+
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
+            </a>
+            <div class="nav__link hide" id="navLinks">
+                <span class="dropdown">
+                    <a
+                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                        onclick="toggleDropdown(event, 'dropdown1')">our solutions 
+                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                            <path
+                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content" id="dropdown1">
+                        <a href="investment-strategies.html">Investment Strategies</a>
+                        <a href="product-portfolio.html">Product Portfolio</a>
+                        <a href="technology.html">Our Technology</a>
+                        <a href="innovation-lab.html">Innovation Lab</a>
+                    </div>
+                </span>
+                <span class="dropdown">
+                    <a
+                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                        onclick="toggleDropdown(event, 'dropdown2')">about us
+                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                            <path
+                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content" id="dropdown2">
+                        <a href="story.html">Our Story</a>
+                        <a href="team.html">Our Partners</a>
+                        <a href="vision.html">Our Vision</a>
+                        <a href="mission.html">Mission Statement</a>
+                        <a href="service.html">Service Model</a>
+                        
+                    </div>
+                </span>
+                <span class="dropdown">
+                    <a
+                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                        onclick="toggleDropdown(event, 'dropdown3')">resources
+                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                            <path
+                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content" id="dropdown3">
+                        <a href="">Educational guides</a>
+                        <a href="">Finance Tools</a>
+                        <a href="">Roadmap</a>
+                        <a href="">FaQs</a>
+                    </div>
+                </span>
+                <span class="dropdown">
+                    <a
+                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                        onclick="toggleDropdown(event, 'dropdown4')">impact
+                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                            <path
+                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content" id="dropdown4">
+                        <a href="community.html">Community Stories</a>
+                        <a href="">Sustainability Story</a>
+                        <a href="">Philanthropic Vision</a>
+                        <a href="">Impact Measurement</a>
+                        <a href="">Reviews</a>
+                    </div>
+                </span>
+            </div>
+
+            <div>
+                <a href="onboarding.html">
+                    <button class="header-btn">Get An Advisor</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- INTRO SECTION -->
+
+        <section class="portfolio-header">
+            <div class="portfolio-overlay"></div>
+            <img src="assets/jpeg-optimizer_8ae51c9a6f4974e1cbffbd4832ee79cb.jpg" alt="Product Portfolio Header" class="header-image">
+            <div class="portfolio-content">
+                <h1 class="portfolio-title">Discover Endless Possibilities</h1>
+                <p class="portfolio-subtitle">Unleash your potential with investment strategies that empower your future</p>
+            </div>
+        </section>        
+
+        <!-- EDUCATION FINANCIAL GROWTH -->
+
+        <section class="education-financial-growth">
+              <div class="image-container">
+                <img src="assets/Education-01-removebg-preview.png" alt="Education and Financial Growth">
+              </div>
+              <div class="text-container">
+                <h2>Empowering Your Financial Future Through Knowledge and Planning</h2>
+                <p>
+                  At <strong style="color: #3949ab;">Paradigm Shift</strong>, we believe that education is the foundation of financial success. 
+                  Our tailored solutions not only help you grow your wealth but also empower you with the knowledge to make 
+                  informed decisions. Whether you are saving for education, planning your career growth, or seeking investment 
+                  opportunities, our strategies are designed to secure your future.
+                </p>
+              </div>
+        </section>
+
+
+        <!-- Growth Portfolio -->
+
+        <section class="growth-portfolio">
+            <div class="container">
+                <h2>Growth Portfolio</h2>
+                <p>
+                    The Growth Portfolio focuses on maximizing long-term capital appreciation. Ideal for investors with a higher risk tolerance, this portfolio includes high-growth stocks, emerging market opportunities, and technology-driven investments.
+                </p>
+                <ul>
+                    <li>Targeted at aggressive growth seekers</li>
+                    <li>Focuses on sectors with exponential potential</li>
+                    <li>Periodic rebalancing to capture growth opportunities</li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="assets/AI_Driven_Portfolio-01__1_-removebg-preview.png" alt="High Yield">
+            </div>
+        </section>        
+
+       <!-- Income Portfolio -->
+
+       <section class="income-portfolio">
+        <div class="container">
+            <h2>Income Portfolio</h2>
+            <p>
+                Designed to provide consistent income, the Income Portfolio focuses on high-yield bonds, dividend-paying stocks, and other income-generating assets. This is perfect for clients looking for steady cash flow.
+            </p>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="assets/jpeg-optimizer_Coin & Dollar (HD) (1).png" class="icon">
+                    <h3>Stable Returns</h3>
+                    <p>Invest in assets that provide regular income with minimal risk.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/jpeg-optimizer_Bonds Certificate (HD).png" class="icon">
+                    <h3>Diversified Bonds</h3>
+                    <p>Corporate and government bonds that ensure consistent interest payments.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/jpeg-optimizer_Coin & Dollar (HD).png" class="icon">
+                    <h3>Dividend Focus</h3>
+                    <p>Stocks with a history of reliable and growing dividend payouts.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-------IMG BACKGROUND---->
+    <section class="img-section">
+        <div class="img-content">
+            <img src="assets/jpeg-optimizer_idea-renewable-energy-energy-saving-energy-saving-light-bulb-tree-growing.jpg" alt="">
+        </div>
+    </section>
+
+    <!------CTA ---->
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-heading">Ready To Take Control of Your Financial Future?</h2>
+            <p class="cta-text">
+                Let us help you achieve your financial goals with personalized strategies and expert advice.
+                Schedule a free consultation today to start your journey toward financial freedom.
+            </p>
+            <a href="/schedule-consultation" class="cta-button">Schedule a Free Consultation</a>
+        </div>
+    </section>
+    
+          
+
+    </main>
+
+
+    <!------FOOTER---->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div>
+                    <a href="onboarding.html">
+                        <button class="reg footer-btn">Get An Advisor</button>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <span class="link-header">
+                        Resources
+                    </span>
+                    <ul>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FaQs</a>
+                        </li>
+                        <li>
+                            <a href="story.html">Our Story</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <span class="link-header">
+                        Contact
+                    </span>
+                    <ul>
+                        <li>
+                            <a href="tel:+1234567890">
+                                +1 (234) 567-890</a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@futurewealth.com" style="text-transform: lowercase;">support@paradigmshift.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#">
+                        <i class='bx bxl-twitter social-icon'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-facebook social-icon'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin social-icon'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-instagram social-icon'></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Paradigm Shift. All rights reserved.</p>
+                <div class="b-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms Of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!------JS SCRIPTS-->
+    <script src="js/index2.js"></script>
+
+</body>
+</html>

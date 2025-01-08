@@ -1,0 +1,343 @@
+.nav__link a {
+    color: #333333;
+}
+
+.nav__link a:hover {
+    color: #4d4d4d;
+}
+
+.nav__link a:hover .d-toggle {
+    fill: #4d4d4d;
+}
+
+
+.d-toggle {
+    fill: #333333;
+}
+
+.header-btn{
+    background: #334097;
+    padding: 0.9vw 1.5vw;
+    color: #fcf6f6;
+    outline: none;
+    font-family: "Altone Trial", sans-serif;
+    font-size: 1.1vw;
+    border: 0.1vw solid #fff;
+    border-radius: 1vw;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Technology intro */
+
+.technology-header {
+    position: relative;
+    width: 100%;
+    height: 25vw; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(5, 5, 5, 0.196); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.technology-content {
+    position: relative;
+    z-index: 2; /* Ensures content appears above overlay */
+    text-align: center;
+    color: #fff;
+    padding: 0 1vw;
+}
+
+.technology-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.technology-subtitle {
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .technology-header {
+        height: 35vw;
+    }
+
+    .technology-title {
+        font-size: 3vw;
+    }
+
+    .technology-subtitle {
+        font-size: 1.5vw;
+    }
+}
+
+/* Introduction to AI Technology */
+
+.ai-introduction {
+    background-color: #f8f9fa;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-introduction .container {
+    width: 45vw;
+}
+
+.ai-introduction h2 {
+    font-size: 2.5vw;
+    color: #1a237e;
+    margin-bottom: 1vw;
+}
+
+.ai-introduction p {
+    font-size: 1.1vw;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1vw;
+}
+
+.img-container {
+    width: 40vw;
+    height: 40vw;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* How Our AI Works */
+
+.how-ai-works {
+    background-color: #ffffff;
+    padding: 5vw;
+    text-align: center;
+}
+
+.how-ai-works h2 {
+    font-size: 2.5vw;
+    color: #1a237e;
+    margin-bottom: 1vw;
+}
+
+.ai-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin-top: 3vw;
+}
+
+.ai-item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 2vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.ai-item h3 {
+    font-size: 1.5vw;
+    color: #1a237e;
+    margin-bottom: 1vw;
+}
+
+.ai-item p {
+    font-size: 1vw;
+    line-height: 1.6;
+}
+
+.ai-item img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    margin-bottom: 1vw;
+}
+
+
+/* Benefits of AI in Financial Planning */
+
+.ai-benefits {
+    background-color: #f8f9fa;
+    padding: 5vw;
+    text-align: center;
+}
+
+.ai-benefits h2 {
+    font-size: 2.5vw;
+    color: #1a237e;
+    margin-bottom: 0.5vw;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 3vw;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    padding: 3vw 2vw;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3 {
+    font-size: 1.5vw;
+    color: #1a237e;
+    margin-bottom: 0.5vw;
+}
+
+.benefit-card p {
+    font-size: 1vw;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Real-Time Market Analysis */
+
+.real-time-analysis {
+    background: linear-gradient(to bottom right, #041d63, #021b42);
+    color: #fff;
+    padding: 5vw;
+    text-align: center;
+}
+
+.real-time-analysis h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    color: #fff;
+}
+
+.real-time-analysis .intro-text {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: center;
+    line-height: 1.8;
+    color: #d1d5db;
+}
+
+.analysis-features {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+    margin-top: 3vw;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1vw;
+    padding: 2vw;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-1vw);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature .icon-wrapper {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon-wrapper img {
+    width: 50%;
+    height: auto;
+}
+
+.feature h3 {
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.feature p {
+    font-size: 1vw;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+
+
+/* AI Security and Privacy */
+
+.ai-security {
+    background-color: #f8f9fa;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-security .container {
+    width: 45vw;
+}
+
+.ai-security h2 {
+    font-size: 2.5vw;
+    color: #1a237e;
+    margin-bottom: 1vw;
+}
+
+.ai-security p {
+    font-size: 1.1vw;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1vw;
+}

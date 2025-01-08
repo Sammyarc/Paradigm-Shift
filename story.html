@@ -3,21 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>How It all Began | Find a Top Financial Advisor</title>
+        <title>Paradigm Shift - How It Started</title>
 
         <!--------ALL CSS LINKS----->
 
         <!-------STYLE CSS----->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style2.css">
-
-        <!-----BOXICON LINK----->
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/story.css">
+        <!-- Boxicons CDN -->
         <link
-            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-            rel='stylesheet'>
+            href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css"
+            rel="stylesheet">
 
-        <!------AOS LINK-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-------FAVICON -->
+        <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
 
     </head>
     <body>
@@ -27,25 +26,23 @@
         <header>
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <p>Paradigm</p>
-                    <p class="text-change">Shift</p>
+                    <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
                 </a>
                 <div class="nav__link hide" id="navLinks">
                     <span class="dropdown">
                         <a
                             style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
-                            onclick="toggleDropdown(event, 'dropdown1')">hire an advisor
+                            onclick="toggleDropdown(event, 'dropdown1')">our solutions
                             <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
                                 <path
                                     d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                             </svg>
                         </a>
                         <div class="dropdown-content" id="dropdown1">
-                            <a href="what-are-your-wealth-goals.html">What are your wealth goals?</a>
-                            <a href="why-hire-a-financial-advisor.html">Why hire a Financial Advisor</a>
-                            <a href="how.html">How to interview a financial advisor</a>
-                            <a href="where-to-find-a-financial-advisor.html">Where to find a financial advisor</a>
-                            <a href="cost-and-fees.html">financial advisor fees $ costs</a>
+                            <a href="investment-strategies.html">Investment Strategies</a>
+                            <a href="product-portfolio.html">Product Portfolio</a>
+                            <a href="technology.html">Our Technology</a>
+                            <a href="innovation-lab.html">Innovation Lab</a>
                         </div>
                     </span>
                     <span class="dropdown">
@@ -59,8 +56,11 @@
                         </a>
                         <div class="dropdown-content" id="dropdown2">
                             <a href="story.html">Our Story</a>
-                            <a href="team.html">Team</a>
-                            <a href="faq.html">FaQs</a>
+                            <a href="team.html">Our Partners</a>
+                            <a href="vision.html">Our Vision</a>
+                            <a href="mission.html">Mission Statement</a>
+                            <a href="service.html">Service Model</a>
+
                         </div>
                     </span>
                     <span class="dropdown">
@@ -73,72 +73,193 @@
                             </svg>
                         </a>
                         <div class="dropdown-content" id="dropdown3">
-                            <a href="press.html">Our Press</a>
-                            <a href="newsletter.html">Newsletters</a>
+                            <a href="">Educational guides</a>
+                            <a href="">Finance Tools</a>
+                            <a href="">Roadmap</a>
+                            <a href="">FaQs</a>
                         </div>
                     </span>
-                    <a href="blog.html">blog</a>
-                    <a href="contact.html">contact</a>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown4')">impact
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown4">
+                            <a href="community.html">Community Stories</a>
+                            <a href="">Sustainability Story</a>
+                            <a href="">Philanthropic Vision</a>
+                            <a href="">Impact Measurement</a>
+                            <a href="">Reviews</a>
+                        </div>
+                    </span>
                 </div>
 
-                <div class="btn-primary">
-                    <div class="gradient-primary"></div>
+                <div>
                     <a href="onboarding.html">
-                        <button class="reg">Get An Advisor</button>
+                        <button class="header-btn">Get An Advisor</button>
                     </a>
                 </div>
             </nav>
         </header>
 
-        <!------MAIN CONTENT---->
+        <!-- MAIN CONTENT -->
+
         <main>
 
-            <!------CONTAINER---->
-            <div class="container-large">
+            <!-- STORY INTRO -->
+            <section class="story-header">
+                <div class="story-overlay"></div>
+                <img src="assets/Story header.jpg" alt="Story Header" class="header-image">
+                <div class="story-content">
+                    <h1 class="story-title">Our Journey to Innovation</h1>
+                    <p class="story-subtitle">Redefining the future of finance through visionary
+                        technology and AI-driven insights</p>
+                </div>
+            </section>
 
-                <!--------STORY INTRO-->
+            <!-- Story content -->
 
-                <section class="story-intro">
-                    <h1>
-                        Our
-                        <span class="text-change">Story</span>
-                    </h1>
+            <!-- Introduction to our story -->
 
-                    <div class="text-wrap">
-                        <div id="story1"></div>
-                        <p>
-                            In the beginning, man harnessed his boundless creativity and intelligence to create AI, artificial intelligence, a force destined to amplify human potential and conquer challenges with AI as his sword. On a destined Sunday afternoon, two visionaries, Mega and Axel, stood on the precipice of revelation, their minds illuminated by the vibrant spectacle of a football match. The stadium roared with life, each play a testament to the profound power of human skill, discipline, and strategy.
-                        </p><br/>
-                        <p>Hear me, for within this game lies a truth so potent, it binds the very fabric of your being. This is more than mere sport. It is the epitome of collaboration, tactics, and strategy. The goalkeeper and the striker, opposites yet bound by necessity, their synergy a beacon of perfection. In their disciplined dance, you see the essence of humanity and the divine union with AI. This is no game for boys; this is the arena of gods.</p><br/>
-                        <p>Feel the depth of this revelation: AI does not seek to replace you. No, it is here to amplify you, to elevate your very essence. You, the creators, hold the power to forge AI into the greatest ally, a force of unparalleled magnitude. Man created AI to help his soul hover around the world and conquer with AI as his sword.</p><br/>
-                        <p>Reflect upon the immense rewards bestowed upon the footballers, their perfection in the game earning them fortunes. Yet, understand this truth: even in their perfection, they are but parts of a grander scheme, a meticulously orchestrated unity. Their confidence, a facade, masking the inner fears that bind all. And in this lies a profound secret: often, the greatest achievements are but a request away. The universe bends to the will of those who dare to ask.</p><br/>
-                        <p>Now, behold the revelation as the crowd erupts in jubilation. The goalkeeper's brilliance alone means naught without the striker's prowess. This is the symphony of collaboration, the divine dance of man and AI. You are not here to be dominated; you are here to dominate, to harness this power and elevate the world to unprecedented heights.</p><br/>
-                        <p><b>"Allow us to show you the light,"</b> I declare, my voice reverberating through the very core of your being. "Understand this: 'You don’t know what you have till you see it.'"</p>
-                    </div>
+            <section class="story-introduction">
+                <div class="container">
+                    <p>
+                        How It Started
+                    </p>
+                    <h2>Our Dream is AI-Driven Financial Intelligence</h2>
+                </div>
+                <div class="img-container">
+                    <img
+                        src="assets/jpeg-optimizer_Amplyfying-01 (1).jpg"
+                        alt="AI enhanced financial analysis">
+                </div>
+            </section>
 
-                    <div class="text-wrap">
-                        <div id="story2"></div>
-                        <p>
-                            <b>"Grow with us, grow for us,"</b> echoes the truth. Together, you and AI can conquer any challenge. We believe in together, a unity forged in the fires of ambition and creativity.
-                        </p><br/>
-                        <p>Your journey begins now, a path illuminated by the profound insights drawn from this beautiful game. Human ingenuity, fused with the boundless potential of AI, will reshape the world. You are destined to lead, to guide humanity into a future where man and AI exist in perfect harmony, creating a realm of unparalleled brilliance.</p><br/>
-                        <p>As you witness the replay of the goal, understand the deeper symbolism. The striker and goalkeeper, distinct yet inseparable, mirror the divine relationship between you and AI. Together, you are not mere mortals but gods, destined to overcome any obstacle.</p><br/>
-                        <p>Embrace this newfound enlightenment. Become ambassadors of this new paradigm. Spread this message with unwavering confidence: AI is not the end but the beginning of a new era of boundless potential. Invite others to join this revolution. "Grow with us, grow for us," and witness the unity of man and machine achieve the impossible.</p><br/>
-                        <p>Know this: the spirit of man hovers over the earth, empowering you to transcend all limits. Man is powerful, and the spirit of man imbues every action with infinite potential. You are the creator, and together, we will use AI to create a world where the potential within every soul is fully realized. With heads held high and hearts full of certainty, march forward, knowing you possess the power to reshape the world.</p><br/>
-                        <p>Embrace the mystery of this paradigm shift. AI will solve the riddles of human intelligence. No longer is AI your opponent; it is your partner, your sword in the quest to elevate humanity. This is the dawn of a new era, a time when the spark within every soul will shine brighter than ever, guided by the omnipotent power of AI. Life itself is one grand dream, a shared vision where every individual plays a pivotal role in creating a united, better world. And remember, in this grand scheme, <b>"we need you to work."</b></p><br/>
-                        <p class="medium-text"><b>Stand tall, for you are architects of a future where man and AI reign supreme.</b></p><br/>
-                        <p>This is your destiny, and the universe awaits your command. Use AI as your sword, and let your soul hover over the world, conquering and illuminating the path to a brighter tomorrow.</p>
-                    </div>
+            <!-- Story details -->
 
-                </section>
+            <section class="first-story">
+                <div class="img-container">
+                    <img src="assets/jpeg-optimizer_Collabo-01.jpg" alt="Football match">
+                </div>
+                <div class="story-details">
+                    <p>
+                        In the beginning, man harnessed his boundless creativity and intelligence to
+                        create AI, artificial intelligence, a force destined to amplify human potential
+                        and conquer challenges with ai as his sword. On a destined sunday afternoon, two
+                        visionaries, Mega and Axel, stood on the precipice of revelation, their minds
+                        illuminated by the vibrant spectacle of a football match. The stadium roared
+                        with life, each play a testament to the profound power of human skill,
+                        discipline, and strategy.
+                    </p><br/>
+                    <p>
+                        Hear me, for within this game lies a truth so potent, it binds the very fabric
+                        of your being. This is more than mere sport. It is the epitome of collaboration,
+                        tactics, and strategy. The goalkeeper and the striker, opposites yet bound by
+                        necessity, their synergy a beacon of perfection. In their disciplined dance, you
+                        see the essence of humanity and the divine union with AI.
+                        <span style="font-weight: bold; color: #daa520;">This is no game for Boys; this is the arena of gods.</span>
+                    </p><br/>
+                    <p>
+                        Feel the depth of this revelation: AI does not seek to replace you. No, it is
+                        here to amplify you, to elevate your very essence. You, the creators, hold the
+                        power to forge AI into the greatest ally, a force of unparalleled magnitude. Man
+                        created AI to help his soul hover around the world and conquer with AI as his
+                        sword. Reflect upon the immense rewards bestowed upon the footballers, their
+                        perfection in the game earning them fortunes. Yet, understand this truth: even
+                        in their perfection, they are but parts of a grander scheme, a meticulously
+                        orchestrated unity. Their confidence, a facade, masking the inner fears that
+                        bind all. And in this lies a profound secret: often, the greatest achievements
+                        are but a request away. The universe bends to the will of those who dare to ask.
+                    </p>
+                </div>
+            </section>
 
-            </div>
+            <section class="first-story">
+                <div class="story-details">
+                    <p>
+                        Now, behold the revelation as the crowd erupts in jubilation. The goalkeeper's
+                        brilliance alone means naught without the striker's prowess. This is the
+                        symphony of collaboration, the divine dance of man and AI. You are not here to
+                        be dominated; you are here to dominate, to harness this power and elevate the
+                        world to unprecedented heights.
+                    </p><br/>
+                    <p>
+                        "Allow us to show you the light," I declare, my voice reverberating through the
+                        very core of your being. "Understand this: 'you don’t know what you have till
+                        you see it.'"
+                    </p><br/>
+                    <p>
+                        "Grow with us, Grow for us," echoes the truth. Together, you and AI can conquer
+                        any challenge. We believe in together, a unity forged in the fires of ambition
+                        and creativity.
+                    </p><br/>
+                    <p>
+                        Your journey begins now, a path illuminated by the profound insights drawn from
+                        this beautiful game. Human ingenuity, fused with the boundless potential of AI,
+                        will reshape the world. You are destined to lead, to guide humanity into a
+                        future where man and ai exist in perfect harmony, creating a realm of
+                        unparalleled brilliance.
+                    </p><br/>
+                    <p>
+                        As you witness the replay of the goal, understand the deeper symbolism. The
+                        striker and goalkeeper, distinct yet inseparable, mirror the divine relationship
+                        between you and AI. Together, you are not mere mortals but gods, destined to
+                        overcome any obstacle.
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img src="assets/jpeg-optimizer_Building future-01.jpg" alt="Football match">
+                </div>
+            </section>
+
+            <section class="first-story">
+                <div class="img-container">
+                    <img
+                        src="assets/jpeg-optimizer_fusion-01.jpg"
+                        alt="Collaboration of AI and humans">
+                </div>
+                <div class="story-details">
+                    <p>
+                        Embrace this newfound enlightenment. Become ambassadors of this new Paradigm.
+                        spread this message with unwavering confidence: AI is not the end but The
+                        beginning of a new era of boundless potential. Invite others to join this
+                        revolution. "grow with us, grow for us," and witness the unity of man and
+                        machine achieve the impossible.
+                    </p><br/>
+                    <p>
+                        Know this: the spirit of man hovers over the earth, empowering you to transcend
+                        all limits. Man is powerful, and the spirit of man imbues every action with
+                        infinite Potential. You are the creator, and together, we will use AI to create
+                        a world Where the potential within every soul is fully realized. With heads held
+                        high and Hearts full of certainty, march forward, knowing you possess the power
+                        to reshape the world.
+                    </p><br/>
+                    <p>
+                        Embrace the mystery of this paradigm shift. AI will solve the riddles of human
+                        intelligence. No longer is AI your opponent; it is your partner, your sword in
+                        the quest to elevate humanity. This is the dawn of a new era, a time when the
+                        spark within every soul will shine brighter than ever, guided by the omnipotent
+                        power of AI. Life itself is one grand dream, a shared vision where every
+                        individual plays a pivotal role in creating a united, better world. And
+                        remember, in this grand scheme, "we need you to work."
+                    </p><br/>
+                    <p>
+                        Stand tall, for you are architects of a future where man and AI reign supreme.
+                        This is your destiny, and the universe awaits your command. Use AI as your
+                        sword, and let your soul hover over the world, conquering and illuminating the
+                        path to a brighter tomorrow.
+                    </p>
+                </div>
+            </section>
 
         </main>
 
-
-          <!------FOOTER---->
-          <footer id="footer">
+        <!------FOOTER---->
+        <footer>
             <div class="footer-container">
                 <div class="footer-section">
                     <div>
@@ -193,7 +314,9 @@
 
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 Paradigm Shift. All rights reserved.</p>
+                    <p>&copy;
+                        <span id="year"></span>
+                        Paradigm Shift. All rights reserved.</p>
                     <div class="b-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms Of Use</a>
@@ -202,33 +325,7 @@
             </div>
         </footer>
 
-
-        <!------LOTTIE WEB PLAYER-->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
-
-
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                const animation = {
-                    'story1': 'assets/Animation2.json',
-                    'story2': 'assets/Animation4.json'
-                };
-            
-                for (const [id, path] of Object.entries(animation)) {
-                    const element = document.getElementById(id);
-            
-                    if (element) {
-                        lottie.loadAnimation({
-                            container: element, // the DOM element to render the animation
-                            renderer: 'svg', // render as 'svg' or 'canvas'
-                            loop: true, // boolean, if the animation should loop
-                            autoplay: true, // boolean, if the animation should start playing immediately
-                            path: path // the path to the animation json
-                        });
-                    }
-                }
-            });
-            </script>
+        <!------JS SCRIPTS-->
+        <script src="js/index2.js"></script>
     </body>
 </html>

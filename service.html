@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Shift - Steps for onboarding</title>
+
+        <!--------ALL CSS LINKS----->
+
+        <!-------STYLE CSS----->
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/service.css">
+        <!-- Boxicons CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css"
+            rel="stylesheet">
+
+        <!-------FAVICON -->
+        <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
+
+    </head>
+    <body>
+
+        <!-----HEADER AREA---->
+
+        <header>
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
+                </a>
+                <div class="nav__link hide" id="navLinks">
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown1')">our solutions
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown1">
+                            <a href="investment-strategies.html">Investment Strategies</a>
+                            <a href="product-portfolio.html">Product Portfolio</a>
+                            <a href="technology.html">Our Technology</a>
+                            <a href="innovation-lab.html">Innovation Lab</a>
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown2')">about us
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown2">
+                            <a href="story.html">Our Story</a>
+                            <a href="team.html">Our Partners</a>
+                            <a href="vision.html">Our Vision</a>
+                            <a href="mission.html">Mission Statement</a>
+                            <a href="service.html">Service Model</a>
+
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown3')">resources
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown3">
+                            <a href="">Educational guides</a>
+                            <a href="">Finance Tools</a>
+                            <a href="">Roadmap</a>
+                            <a href="">FaQs</a>
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown4')">impact
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown4">
+                            <a href="community.html">Community Stories</a>
+                            <a href="">Sustainability Story</a>
+                            <a href="">Philanthropic Vision</a>
+                            <a href="">Impact Measurement</a>
+                            <a href="">Reviews</a>
+                        </div>
+                    </span>
+                </div>
+
+                <div>
+                    <a href="onboarding.html">
+                        <button class="header-btn">Get An Advisor</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+
+        <main>
+
+            <!-- SERVICE INTRO -->
+            <section class="service-header">
+                <div class="service-overlay"></div>
+                <img
+                    src="assets/jpeg-optimizer_Artboard 1Header.jpg"
+                    alt="Service Header"
+                    class="header-image">
+                <div class="service-content">
+                    <h1 class="service-text">Your Financial Journey Awaits</h1>
+                    <p class="service-subtitle">Experience seamless onboarding and personalized strategies powered by AI</p>
+                </div>
+            </section>
+
+            <!-- SERVICE MODEL -->
+
+            <section class="service-model">
+                <h1 class="service-title">Client Onboarding and Service Model Experience</h1>
+                <p class="service-intro">
+                    At Paradigm Shift, we aim to make your investment experience smooth,
+                    personalized, and supportive from the moment you join. Here's what you can
+                    expect as a new client:
+                </p>
+                <div class="timeline-container">
+                    <div id="timeline">
+
+                        <!-- Step 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img
+                                        src="assets/OnBoarding-01-removebg-preview.png"
+                                        alt="Meeting with the client">
+                                </div>
+                                <h2>Step 1: Initial Consultation and Assessment</h2>
+                                <ul>
+                                    <li>
+                                        Welcome Meeting: You’ll be introduced to your dedicated Relationship Manager who
+                                        will guide you through our services and understand your financial goals.
+                                    </li>
+                                    <li>
+                                        Personalized Assessment: We assess your financial needs, risk tolerance, and
+                                        preferences using AI-driven tools to create a tailored investor profile.
+                                    </li>
+                                    <li>
+                                        Benefit to You: Our AI technology quickly identifies your investment style and
+                                        preferences, ensuring we build a strategy that fits your needs.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <div class="timeline-image">
+                                    <img
+                                        src="assets/Inv_Prop-01-removebg-preview.png"
+                                        alt="Investment Proposal">
+                                </div>
+                                <h2>Step 2: Customized Investment Proposal</h2>
+                                <ul>
+                                    <li>
+                                        Tailored Strategy: Based on your profile, we craft a customized investment plan with recommended strategies, risk analysis, and clear fee structures.
+                                    </li>
+                                    <li>
+                                        Predictive Insights: Our technology provides performance projections under different market conditions, helping you make informed decisions.
+                                    </li>
+                                    <li>
+                                        Benefit to You: You receive a clear and personalized proposal that outlines your potential investment journey with full transparency.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img
+                                        src="assets/Account_SetUp-01-removebg-preview.png"
+                                        alt="Account Setup">
+                                </div>
+                                <h2>Step 3: Account Setup and Platform Access</h2>
+                                <ul>
+                                    <li>
+                                        Secure Account Creation: We help set up your account securely and provide access to our client platform for monitoring your investments.
+                                    </li>
+                                    <li>
+                                        Platform Introduction: We guide you through our user-friendly platform, explaining how to track performance, access reports, and use AI-powered insights.
+                                    </li>
+                                    <li>
+                                        Benefit to You: Even if you’re not tech-savvy, our platform is easy to navigate, and support is always available to help you feel confident in using it.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <div class="timeline-image">
+                                    <img
+                                        src="assets/Reporting-01-removebg-preview.png"
+                                        alt="Reporting and Monitoring Image">
+                                </div>
+                                <h2>Step 4: Continuous Monitoring and Reporting</h2>
+                                <ul>
+                                    <li>
+                                        Regular Reviews: Your portfolio is monitored by both AI and your Relationship Manager, with scheduled reviews to discuss performance and adjustments.
+                                    </li>
+                                    <li>
+                                        Real-Time Updates: Get alerts and updates on market changes, strategy adjustments, and personalized insights.
+                                    </li>
+                                    <li>
+                                        Benefit to You: Stay informed and engaged with your investments, knowing your portfolio is being actively managed and optimized.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img
+                                        src="assets/Ongoing0-01-removebg-preview.png"
+                                        alt="Client Support and services">
+                                </div>
+                                <h2>Step 5: Ongoing Support and Client Success Services</h2>
+                                <ul>
+                                    <li>
+                                        Dedicated Support: Your Relationship Manager is always available to answer questions, provide guidance, and support your evolving needs.
+                                    </li>
+                                    <li>
+                                        Educational Resources: Access to exclusive content, webinars, and market insights tailored to your investment strategy.
+                                    </li>
+                                    <li>
+                                        Benefit to You: You’re never left in the dark; our continuous support and resources ensure you remain confident in your financial decisions.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="timeline-item right">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <div class="timeline-image">
+                                    <img
+                                        src="assets/Seamless-01-removebg-preview.png"
+                                        alt="Seamless reinvestment options">
+                                </div>
+                                <h2>Step 6: Seamless Exit and Reinvestment Options</h2>
+                                <ul>
+                                    <li>
+                                        Strategic Exits: When it's time to exit an investment, we guide you on the best strategy to maximize returns.
+                                    </li>
+                                    <li>
+                                        Reinvestment Planning: Explore new opportunities that align with your updated financial goals.
+                                    </li>
+                                    <li>
+                                        Benefit to You: Transition smoothly between investments with expert guidance, keeping your portfolio aligned with market opportunities.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Conclusion -->
+
+            <section class="conclude">
+                <h3>Conclusion: A Commitment to Your Success</h3>
+                <p>At Paradigm Shift, we are dedicated to making your investment journey as seamless and rewarding as possible. From personalized onboarding to continuous support and expert guidance, we strive to empower you every step of the way. Experience a financial service that combines cutting-edge technology with a personal touch—your success is our mission.</p>
+                <p>
+                    Explore your investment future with Paradigm Shift, where every client experience is designed with excellence.
+                </p>
+              </section>
+
+        </main>
+
+        <!------FOOTER---->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div>
+                        <a href="onboarding.html">
+                            <button class="reg footer-btn">Get An Advisor</button>
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Resources
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FaQs</a>
+                            </li>
+                            <li>
+                                <a href="story.html">Our Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Contact
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="tel:+1234567890">
+                                    +1 (234) 567-890</a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@futurewealth.com" style="text-transform: lowercase;">support@paradigmshift.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class='bx bxl-twitter social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-facebook social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-instagram social-icon'></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy;
+                        <span id="year"></span>
+                        Paradigm Shift. All rights reserved.</p>
+                    <div class="b-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!------JS SCRIPTS-->
+        <script src="js/index2.js"></script>
+
+    </body>
+</html>
