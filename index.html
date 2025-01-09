@@ -20,30 +20,32 @@
 
         <!-------FAVICON -->
         <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
+
+        <!-- TYPED JS -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     </head>
     <body>
 
-        
         <!------MAIN CONTENT---->
         <main>
-            
+
             <!--------HERO SECTION----->
-            
+
             <section class="hero-section">
                 <div class="overlay"></div>
                 <!-----HEADER AREA---->
-        
+
                 <header>
                     <nav class="nav">
                         <a href="index.html" class="logo">
                             <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
                         </a>
-                        
+
                         <div class="nav__link hide" id="navLinks">
                             <span class="dropdown">
                                 <a
                                     style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
-                                    onclick="toggleDropdown(event, 'dropdown1')">our solutions 
+                                    onclick="toggleDropdown(event, 'dropdown1')">our solutions
                                     <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
                                         <path
                                             d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
@@ -71,7 +73,7 @@
                                     <a href="vision.html">Our Vision</a>
                                     <a href="mission.html">Mission Statement</a>
                                     <a href="service.html">Service Model</a>
-                                    
+
                                 </div>
                             </span>
                             <span class="dropdown">
@@ -108,7 +110,7 @@
                                 </div>
                             </span>
                         </div>
-        
+
                         <div class="btn-primary">
                             <div class="gradient-primary"></div>
                             <a href="onboarding.html">
@@ -118,26 +120,34 @@
                     </nav>
                 </header>
 
-
-                    <div class="hero-content">
-                        <div class="hero-mini-content">
-                            <h1>Take Control of Your Financies.
-                            </h1>
-                            <p class="hero-paragraph">Financial freedom isn’t just about money. It’s about
-                                finding your why and aligning your resources to pursue it. Paradigm Shift’s
-                                financial advisors help you define that why and create a financial plan that
-                                lets you live out your unique vision of freedom.</p>
-                        </div>
-                        
-                        <div class="h-btn-primary">
-                            
-                            <a href="onboarding.html">
-                                <button class="h-reg">Get An Advisor</button>
-                            </a>
-                        </div>
-
+                <div class="hero-content">
+                    <div class="hero-mini-content">
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Take Control of Your Financies.
+                        </h1>
+                        <p
+                            class="hero-paragraph"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-anchor-placement="top-bottom">Financial
+                            freedom isn’t just about money. It’s about finding your why and aligning your
+                            resources to pursue it. Paradigm Shift’s financial advisors help you define that
+                            why and create a financial plan that lets you live out your unique vision of
+                            freedom.</p>
                     </div>
-                
+
+                    <div
+                        class="h-btn-primary"
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="800"
+                        data-aos-offset="0">
+                        <a href="onboarding.html">
+                            <button class="h-reg">Get An Advisor</button>
+                        </a>
+                    </div>
+
+                </div>
+
             </section>
 
             <!-----BRAND SECTION-->
@@ -156,7 +166,9 @@
                             <img src="assets/albin.png" alt="albin logo">
                         </div>
                         <div class="brand-logo">
-                            <img src="assets/kensho-technologies-llc-logo-vector-removebg-preview.png" alt="kensho-technologies logo">
+                            <img
+                                src="assets/kensho-technologies-llc-logo-vector-removebg-preview.png"
+                                alt="kensho-technologies logo">
                         </div>
                         <div class="brand-logo">
                             <img src="assets/Metaco_colour.png" alt="Metaco logo">
@@ -175,10 +187,10 @@
 
             <section class="tab-section">
                 <div class="tab-details">
-                    <h2>Wealth doesn’t have to be complicated.</h2>
+                    <h2 data-aos="fade-right" data-aos-duration="1000">Wealth doesn’t have to be complicated.</h2>
                     <div class="tab-content">
                         <div class="tab-video-content">
-                            <video autoplay loop muted>
+                            <video autoplay="autoplay" loop="loop" muted="muted">
                                 <source src="/assets/Paradigm Main Ad.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -202,7 +214,7 @@
             <section class="quiz-section">
                 <div class="quiz-content-wrapper">
                     <div class="quiz-img-background">
-                        <h3>Does your retirement plan stack up? Let’s find out.</h3>
+                        <h3 id="typed-element" style="min-height: 23vw;"></h3>
                         <div class="h-btn-primary">
                             <a href="onboarding.html">
                                 <button class="h-reg">Get An Advisor</button>
@@ -232,8 +244,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="question-container" >
-                           <img src="assets/Retirement_Planning.png" style="margin-top: -5vw;">
+                        <div class="question-container">
+                            <img src="assets/Retirement_Planning.png" style="margin-top: -5vw;" alt="Retirement_Planning">
                         </div>
 
                     </div>
@@ -244,13 +256,14 @@
 
             <section class="who-section">
                 <div class="who-content">
-                    <h2>Who we serve</h2>
-                    <p>At Paradigm Shift, our goal is to help you pursue your goals, whether you’re
-                        just getting started, preparing for retirement, or well into your golden years.</p>
+                    <h2 data-aos="fade-right" data-aos-duration="1000">Who we serve</h2>
+                    <p data-aos="zoom-in" data-aos-duration="500">At Paradigm Shift, our goal is to
+                        help you pursue your goals, whether you’re just getting started, preparing for
+                        retirement, or well into your golden years.</p>
                     <div class="who-container">
                         <div class="who-card">
                             <div class="who-overlay"></div>
-                            <img src="assets/jpeg-optimizer_Community empowerment.jpg" alt="">
+                            <img src="assets/jpeg-optimizer_Community empowerment.jpg" alt="Community empowerment">
                             <div class="who-info">
                                 <h3>Business owners and executives</h3>
                                 <p>I want to help my business continue to thrive, while also planning for
@@ -259,7 +272,7 @@
                         </div>
                         <div class="who-card">
                             <div class="who-overlay"></div>
-                            <img src="assets/jpeg-optimizer_Impactful Report.jpg" alt="">
+                            <img src="assets/jpeg-optimizer_Impactful Report.jpg" alt="Impactful Report">
                             <div class="who-info">
                                 <h3>Pre retirees
                                 </h3>
@@ -270,7 +283,9 @@
                         </div>
                         <div class="who-card">
                             <div class="who-overlay"></div>
-                            <img src="assets/jpeg-optimizer_african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station-hold-led-bulb.jpg" alt="">
+                            <img
+                                src="assets/jpeg-optimizer_african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station-hold-led-bulb.jpg"
+                                alt="american-technician-checks-maintenance-solar-panels-group-three-black-engineers">
                             <div class="who-info">
                                 <h3>Retirees</h3>
                                 <p>I’m already retired and want to make sure my legacy is protected (and I don’t
@@ -279,7 +294,9 @@
                         </div>
                         <div class="who-card">
                             <div class="who-overlay"></div>
-                            <img src="assets/jpeg-optimizer_young-african-family-having-debt-problems-able-pay-gas-electricity-managing-finances-sitting-kitchen-table-with-papers-calculating-bills-trying-cut-their-domestic-expenses.jpg" alt="">
+                            <img
+                                src="assets/jpeg-optimizer_young-african-family-having-debt-problems-able-pay-gas-electricity-managing-finances-sitting-kitchen-table-with-papers-calculating-bills-trying-cut-their-domestic-expenses.jpg"
+                                alt="young-african-family-having-debt-problems">
                             <div class="who-info">
                                 <h3>private client</h3>
                                 <p>I’m a high-income earner with complex needs that require sophisticated,
@@ -288,7 +305,7 @@
                         </div>
                         <div class="who-card">
                             <div class="who-overlay"></div>
-                            <img src="assets/CW_YoungProfessionals.jpg" alt="">
+                            <img src="assets/CW_YoungProfessionals.jpg" alt="CW_YoungProfessionals">
                             <div class="who-info">
                                 <h3>Young investor</h3>
                                 <p>I’m a young professional looking to expand my family, eliminate debt and help
@@ -305,43 +322,46 @@
             <section class="what-section">
                 <div class="what-content">
                     <div class="what-img-wrapper">
-                        <img src="assets/jpeg-optimizer_H1PYoj5OLSUPnYE1U2Zyn-transformed.png" alt="Steps involved in investment">
+                        <img
+                            src="assets/jpeg-optimizer_H1PYoj5OLSUPnYE1U2Zyn-transformed.png"
+                            alt="Steps involved in investment">
                     </div>
                     <div class="what-details">
-                        <h2>What We Do</h2>
-                        <h3>You define freedom. We’ll design the path to help you get there.</h3>
-                        <p>From financial planning to retirement planning and everything in between, our
-                            guidance is designed with one goal in mind: to help you find your freedom.</p>
+                        <h2 data-aos="fade-right" data-aos-duration="500">What We Do</h2>
+                        <h3 data-aos="fade-up" data-aos-duration="1000">You define freedom. We’ll design the path to help you get there.</h3>
+                        <p data-aos="fade-up" data-aos-duration="1000">From financial planning to
+                            retirement planning and everything in between, our guidance is designed with one
+                            goal in mind: to help you find your freedom.</p>
                         <div class="btn-grid">
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon1.webp">
                                 <span>Financial Planning</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon2.webp">
                                 <span>Business Ownership</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon3.webp">
                                 <span>Retirement Planning</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon4.webp">
                                 <span>Private Client Services</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon5.webp">
                                 <span>Estate Planning</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon6.webp">
                                 <span>Insurance</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon7.webp">
                                 <span>Investment Management</span>
                             </div>
-                            <div class="grid1">
+                            <div class="grid1" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="assets/icon9.webp">
                                 <span>Tax Planning</span>
                             </div>
@@ -353,23 +373,30 @@
             <!-------IMG BACKGROUND---->
             <section class="img-section">
                 <div class="img-content">
-                    <img src="assets/jpeg-optimizer_idea-renewable-energy-energy-saving-energy-saving-light-bulb-tree-growing.jpg" alt="">
+                    <img
+                        src="assets/jpeg-optimizer_idea-renewable-energy-energy-saving-energy-saving-light-bulb-tree-growing.jpg"
+                        alt="energy-saving-light-bulb-tree-growing image">
                 </div>
             </section>
 
             <!------CTA ---->
 
-            <section class="cta-section">
+            <section
+                class="cta-section"
+                data-aos="flip-left"
+                data-aos-delay="100"
+                data-aos-duration="1000">
                 <div class="cta-content">
                     <h2 class="cta-heading">Ready To Take Control of Your Financial Future?</h2>
                     <p class="cta-text">
-                        Let us help you achieve your financial goals with personalized strategies and expert advice.
-                        Schedule a free consultation today to start your journey toward financial freedom.
+                        Let us help you achieve your financial goals with personalized strategies and
+                        expert advice. Schedule a free consultation today to start your journey toward
+                        financial freedom.
                     </p>
                     <a href="" class="cta-button">Schedule a Free Consultation</a>
                 </div>
             </section>
-            
+
         </main>
 
         <!------FOOTER---->
@@ -428,7 +455,9 @@
 
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; <span id="year"></span> Paradigm Shift. All rights reserved.</p>
+                    <p>&copy;
+                        <span id="year"></span>
+                        Paradigm Shift. All rights reserved.</p>
                     <div class="b-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms Of Use</a>
@@ -440,9 +469,37 @@
         <!--------JS LINKS-->
         <script src="js/index2.js"></script>
 
-        <!------LOTTIE WEB PLAYER-->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+        <!-- AOS SCRIPTS -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: function () {
+                    // Disable AOS for screens smaller than 768px
+                    return window.innerWidth < 768;
+                },
+                once: true, // Animations will run only once
+            });
+        </script>
+
+        <!-- TYPED JS INITIALIZATION -->
+        <script>
+            // Target the element and initialize Typed.js
+            const typedElement = document.getElementById("typed-element");
+
+            const typed = new Typed(typedElement, {
+                strings: [
+                    "Does your retirement plan stack up? Let’s find out.", 
+                    "Are you ready to secure your financial future today?", 
+                    "Your future starts now, plan for a worry-free retirement."
+                ],
+
+                typeSpeed: 70, // Speed of typing
+                backSpeed: 50, // Speed of backspacing
+                backDelay: 1500, // Delay before backspacing starts
+                loop: true, // Loop the animation
+            });
+        </script>
 
     </body>
 </html>

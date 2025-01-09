@@ -1,326 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigm Shift - Technologies Used</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Shift - Technologies Used</title>
 
-    <!--------ALL CSS LINKS----->
+        <!--------ALL CSS LINKS----->
 
         <!-------STYLE CSS----->
         <link rel="stylesheet" href="css/index2.css">
         <link rel="stylesheet" href="css/technology.css">
-    <!-- Boxicons CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <!-- Boxicons CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css"
+            rel="stylesheet">
+
+        <!------AOS LINK-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-------FAVICON -->
         <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
 
-</head>
-<body>
+    </head>
+    <body>
 
-     <!-----HEADER AREA---->
+        <!-----HEADER AREA---->
 
-     <header>
-        <nav class="nav">
-            <a href="index.html" class="logo">
-                <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
-            </a>
-            <div class="nav__link hide" id="navLinks">
-                <span class="dropdown">
-                    <a
-                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
-                        onclick="toggleDropdown(event, 'dropdown1')">our solutions 
-                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                            <path
-                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
-                        </svg>
-                    </a>
-                    <div class="dropdown-content" id="dropdown1">
-                        <a href="investment-strategies.html">Investment Strategies</a>
-                        <a href="product-portfolio.html">Product Portfolio</a>
-                        <a href="technology.html">Our Technology</a>
-                        <a href="innovation-lab.html">Innovation Lab</a>
-                    </div>
-                </span>
-                <span class="dropdown">
-                    <a
-                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
-                        onclick="toggleDropdown(event, 'dropdown2')">about us
-                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                            <path
-                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
-                        </svg>
-                    </a>
-                    <div class="dropdown-content" id="dropdown2">
-                        <a href="story.html">Our Story</a>
-                        <a href="">Our Partners</a>
-                        <a href="vision.html">Our Vision</a>
-                        <a href="mission.html">Mission Statement</a>
-                        <a href="service.html">Service Model</a>
-                        
-                    </div>
-                </span>
-                <span class="dropdown">
-                    <a
-                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
-                        onclick="toggleDropdown(event, 'dropdown3')">resources
-                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                            <path
-                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
-                        </svg>
-                    </a>
-                    <div class="dropdown-content" id="dropdown3">
-                        <a href="">Educational guides</a>
-                        <a href="">Finance Tools</a>
-                        <a href="">Roadmap</a>
-                        <a href="">FaQs</a>
-                    </div>
-                </span>
-                <span class="dropdown">
-                    <a
-                        style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
-                        onclick="toggleDropdown(event, 'dropdown4')">impact
-                        <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                            <path
-                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
-                        </svg>
-                    </a>
-                    <div class="dropdown-content" id="dropdown4">
-                        <a href="community.html">Community Stories</a>
-                        <a href="sustainability.html">Sustainability Story</a>
-                        <a href="philanthrophy.html">Philanthropic Vision</a>
-                        <a href="impact.html">Impact Measurement</a>
-                        <a href="">Reviews</a>
-                    </div>
-                </span>
-            </div>
-
-            <div>
-                <a href="onboarding.html">
-                    <button class="header-btn">Get An Advisor</button>
+        <header>
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
                 </a>
-            </div>
-        </nav>
-    </header>
-
-    <!-- MAIN CONTENT -->
-
-    <main>
-
-        <!-- TECHNOLOGY INTRO -->
-        <section class="technology-header">
-            <div class="technology-overlay"></div>
-            <img src="assets/fusion-01.jpg" alt="technology Header" class="header-image">
-            <div class="technology-content">
-                <h1 class="technology-title">Harnessing AI for Smarter Financial Decisions</h1>
-                <p class="technology-subtitle">Revolutionizing investment strategies with cutting-edge technology and artificial intelligence</p>
-            </div>
-        </section>
-
-        <!-- Introduction to AI Technology -->
-
-        <section class="ai-introduction">
-            <div class="container">
-                <h2>AI-Driven Financial Intelligence</h2>
-                <p>
-                    Our platform leverages cutting-edge AI algorithms to analyze market trends, assess risk, and personalize investment strategies. With AI, we help you make informed financial decisions by providing real-time insights and predictions.
-                </p>
-                <p>
-                    By using advanced machine learning techniques, our AI adapts to your financial goals and adjusts strategies dynamically to optimize returns.
-                </p>
-            </div>
-            <div class="img-container">
-                <img
-                    src="assets/AI_Driven_Portfolio-01__1_-removebg-preview.png"
-                    alt="AI enhanced financial analysis">
-            </div>
-        </section>
-
-        <!-- How Our AI Works -->
-
-        <section class="how-ai-works">
-            <div class="container">
-                <h2>How Our AI Works</h2>
-                <p style="font-size: 1.1vw;">
-                    Our AI system analyzes vast amounts of financial data in real-time, providing you with actionable insights. The technology works in three key areas:
-                </p>
-                <div class="ai-items">
-                    <div class="ai-item">
-                        <div class="text">
-                            <h3>Data Collection & Analysis</h3>
-                            <p>The AI gathers and processes real-time financial data from various sources, including market trends, economic indicators, and individual portfolio performance.</p>
+                <div class="nav__link hide" id="navLinks">
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown1')">our solutions
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown1">
+                            <a href="investment-strategies.html">Investment Strategies</a>
+                            <a href="product-portfolio.html">Product Portfolio</a>
+                            <a href="technology.html">Our Technology</a>
+                            <a href="innovation-lab.html">Innovation Lab</a>
                         </div>
-                        <img src="assets/Education-01-removebg-preview.png" alt="Data Collection & Analysis">
-                    </div>
-                    <div class="ai-item">
-                        <div class="text">
-                            <h3>Risk Assessment</h3>
-                            <p>The system evaluates potential risks in your portfolio, ensuring that it aligns with your risk tolerance and financial goals.</p>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown2')">about us
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown2">
+                            <a href="story.html">Our Story</a>
+                            <a href="">Our Partners</a>
+                            <a href="vision.html">Our Vision</a>
+                            <a href="mission.html">Mission Statement</a>
+                            <a href="service.html">Service Model</a>
+
                         </div>
-                        <img src="assets/Aligning_growth-01-removebg-preview.png" alt="Risk Assessment">
-                    </div>
-                    <div class="ai-item">
-                        <div class="text">
-                            <h3>Personalized Recommendations</h3>
-                            <p>Using machine learning, the AI generates tailored investment strategies and actionable recommendations specific to your unique needs.</p>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown3')">resources
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown3">
+                            <a href="">Educational guides</a>
+                            <a href="">Finance Tools</a>
+                            <a href="">Roadmap</a>
+                            <a href="">FaQs</a>
                         </div>
-                        <img src="assets/Collaborating-01-removebg-preview.png" alt="Personalized Recommendations">
-                    </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown4')">impact
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown4">
+                            <a href="community.html">Community Stories</a>
+                            <a href="sustainability.html">Sustainability Story</a>
+                            <a href="philanthrophy.html">Philanthropic Vision</a>
+                            <a href="impact.html">Impact Measurement</a>
+                            <a href="">Reviews</a>
+                        </div>
+                    </span>
                 </div>
-            </div>
-        </section>
-        
 
-        <!-- Benefits of AI in Financial Planning -->
-
-        <section class="ai-benefits">
-            <div class="container">
-                <h2>The Benefits of AI in Financial Planning</h2>
-                <p>
-                    Our AI-driven platform offers multiple advantages to help you make smarter, data-backed financial decisions:
-                </p>
-                <div class="benefit-cards">
-                    <div class="benefit-card">
-                        <h3>Efficiency</h3>
-                        <p>AI processes large amounts of financial data quickly, offering immediate insights and allowing you to take actions faster.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Personalization</h3>
-                        <p>The system tailors recommendations based on your personal financial goals and risk tolerance.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Continuous Monitoring</h3>
-                        <p>Our AI monitors your portfolio continuously, adjusting strategies based on new data and market trends.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Real-Time Market Analysis -->
-
-        <section class="real-time-analysis">
-            <div class="container">
-                <h2>Real-Time Market Analysis</h2>
-                <p class="intro-text">
-                    Our AI continuously analyzes the market, providing you with up-to-date insights on investment opportunities, trends, and risks. Using real-time data, our platform helps you stay ahead of the curve and adjust your financial strategies accordingly.
-                </p>
-                <div class="analysis-features">
-                    <div class="feature">
-                        <div class="icon-wrapper">
-                            <img src="assets/market-research-svgrepo-com.svg" alt="Market Insights">
-                        </div>
-                        <h3>Market Insights</h3>
-                        <p>Get instant analysis on market movements and trends to make informed investment decisions.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="icon-wrapper">
-                            <img src="assets/statistic-up-svgrepo-com.svg" alt="Predictive Analytics">
-                        </div>
-                        <h3>Predictive Analytics</h3>
-                        <p>Our AI uses advanced algorithms to predict potential market changes, helping you stay ahead of shifts.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="icon-wrapper">
-                            <img src="assets/notifications-alert-svgrepo-com.svg" alt="Portfolio Alerts">
-                        </div>
-                        <h3>Portfolio Alerts</h3>
-                        <p>Receive notifications when your portfolio requires adjustments based on market conditions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- AI Security and Privacy -->
-
-        <section class="ai-security">
-            <div class="container">
-                <h2>AI Security & Privacy</h2>
-                <p>
-                    We prioritize the security and privacy of your financial data. Our AI technology adheres to the highest standards of data encryption and security protocols to ensure that your information is safe and protected at all times.
-                </p>
-                <p>
-                    With AI, you can have confidence that your financial data is processed securely, with robust safeguards in place to prevent unauthorized access and ensure your privacy.
-                </p>
-            </div>
-            <div class="img-container">
-                <img
-                    src="assets/jpeg-optimizer_Secure_Trading-01-removebg-preview.png"
-                    alt="AI security and privacy">
-            </div>
-        </section>
-        
-
-    </main>
-
-    <!------FOOTER---->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
                 <div>
                     <a href="onboarding.html">
-                        <button class="reg footer-btn">Get An Advisor</button>
+                        <button class="header-btn">Get An Advisor</button>
                     </a>
                 </div>
-                <div class="footer-links">
-                    <span class="link-header">
-                        Resources
-                    </span>
-                    <ul>
-                        <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">FaQs</a>
-                        </li>
-                        <li>
-                            <a href="story.html">Our Story</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <span class="link-header">
-                        Contact
-                    </span>
-                    <ul>
-                        <li>
-                            <a href="tel:+1234567890">
-                                +1 (234) 567-890</a>
-                        </li>
-                        <li>
-                            <a href="mailto:support@futurewealth.com" style="text-transform: lowercase;">support@paradigmshift.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="social-links">
-                    <a href="#">
-                        <i class='bx bxl-twitter social-icon'></i>
-                    </a>
-                    <a href="#">
-                        <i class='bx bxl-facebook social-icon'></i>
-                    </a>
-                    <a href="#">
-                        <i class='bx bxl-linkedin social-icon'></i>
-                    </a>
-                    <a href="#">
-                        <i class='bx bxl-instagram social-icon'></i>
-                    </a>
-                </div>
+            </nav>
+        </header>
 
+        <!-- MAIN CONTENT -->
+
+        <main>
+
+            <!-- TECHNOLOGY INTRO -->
+            <section class="technology-header">
+                <div class="technology-overlay"></div>
+                <img src="assets/fusion-01.jpg" alt="technology Header" class="header-image">
+                <div class="technology-content">
+                    <h1
+                        class="technology-title"
+                        data-aos="flip-left"
+                        data-aos-delay="100"
+                        data-aos-duration="1000">Harnessing AI for Smarter Financial Decisions</h1>
+                    <p
+                        class="technology-subtitle"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-duration="1000">Revolutionizing
+                        investment strategies with cutting-edge technology and artificial intelligence</p>
+                </div>
+            </section>
+
+            <!-- Introduction to AI Technology -->
+
+            <section class="ai-introduction">
+                <div class="container">
+                    <h2 data-aos="flip-up" data-aos-duration="1000">AI-Driven Financial Intelligence</h2>
+                    <p data-aos="fade-in" data-aos-duration="1000">
+                        Our platform leverages cutting-edge AI algorithms to analyze market trends,
+                        assess risk, and personalize investment strategies. With AI, we help you make
+                        informed financial decisions by providing real-time insights and predictions.
+                    </p>
+                    <p data-aos="fade-in" data-aos-duration="1000">
+                        By using advanced machine learning techniques, our AI adapts to your financial
+                        goals and adjusts strategies dynamically to optimize returns.
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img
+                        src="assets/AI_Driven_Portfolio-01__1_-removebg-preview.png"
+                        alt="AI enhanced financial analysis">
+                </div>
+            </section>
+
+            <!-- How Our AI Works -->
+
+            <section class="how-ai-works">
+                <div class="container">
+                    <h2 data-aos="flip-up" data-aos-duration="1000">How Our AI Works</h2>
+                    <p style="font-size: 1.1vw;" data-aos="fade-in" data-aos-duration="1000">
+                        Our AI system analyzes vast amounts of financial data in real-time, providing
+                        you with actionable insights. The technology works in three key areas:
+                    </p>
+                    <div class="ai-items">
+                        <div class="ai-item">
+                            <div class="text">
+                                <h3 data-aos="flip-up" data-aos-duration="1000">Data Collection & Analysis</h3>
+                                <p data-aos="fade-in" data-aos-duration="1000">The AI gathers and processes
+                                    real-time financial data from various sources, including market trends, economic
+                                    indicators, and individual portfolio performance.</p>
+                            </div>
+                            <img
+                                src="assets/Education-01-removebg-preview.png"
+                                alt="Data Collection & Analysis"
+                                data-aos="flip-right"
+                                data-aos-duration="1000">
+                        </div>
+                        <div class="ai-item">
+                            <div class="text">
+                                <h3 data-aos="flip-up" data-aos-duration="1000">Risk Assessment</h3>
+                                <p data-aos="fade-in" data-aos-duration="1000">The system evaluates potential
+                                    risks in your portfolio, ensuring that it aligns with your risk tolerance and
+                                    financial goals.</p>
+                            </div>
+                            <img
+                                src="assets/Aligning_growth-01-removebg-preview.png"
+                                alt="Risk Assessment"
+                                data-aos="flip-right"
+                                data-aos-duration="1000">
+                        </div>
+                        <div class="ai-item">
+                            <div class="text">
+                                <h3 data-aos="flip-up" data-aos-duration="1000">Personalized Recommendations</h3>
+                                <p data-aos="fade-in" data-aos-duration="1000">Using machine learning, the AI
+                                    generates tailored investment strategies and actionable recommendations specific
+                                    to your unique needs.</p>
+                            </div>
+                            <img
+                                src="assets/Collaborating-01-removebg-preview.png"
+                                alt="Personalized Recommendations"
+                                data-aos="flip-right"
+                                data-aos-duration="1000">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits of AI in Financial Planning -->
+
+            <section class="ai-benefits">
+                <div class="container">
+                    <h2 data-aos="flip-up" data-aos-duration="1000">The Benefits of AI in Financial Planning</h2>
+                    <p data-aos="fade-in" data-aos-duration="1000">
+                        Our AI-driven platform offers multiple advantages to help you make smarter,
+                        data-backed financial decisions:
+                    </p>
+                    <div class="benefit-cards">
+                        <div class="benefit-card">
+                            <h3 data-aos="flip-up" data-aos-duration="1000">Efficiency</h3>
+                            <p data-aos="fade-in" data-aos-duration="1000">AI processes large amounts of
+                                financial data quickly, offering immediate insights and allowing you to take
+                                actions faster.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3 data-aos="flip-up" data-aos-duration="1000">Personalization</h3>
+                            <p data-aos="fade-in" data-aos-duration="1000">The system tailors
+                                recommendations based on your personal financial goals and risk tolerance.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3 data-aos="flip-up" data-aos-duration="1000">Continuous Monitoring</h3>
+                            <p data-aos="fade-in" data-aos-duration="1000">Our AI monitors your portfolio
+                                continuously, adjusting strategies based on new data and market trends.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Real-Time Market Analysis -->
+
+            <section class="real-time-analysis">
+                <div class="container">
+                    <h2 data-aos="flip-up" data-aos-duration="1000">Real-Time Market Analysis</h2>
+                    <p class="intro-text" data-aos="fade-in" data-aos-duration="1000">
+                        Our AI continuously analyzes the market, providing you with up-to-date insights
+                        on investment opportunities, trends, and risks. Using real-time data, our
+                        platform helps you stay ahead of the curve and adjust your financial strategies
+                        accordingly.
+                    </p>
+                    <div class="analysis-features">
+                        <div class="feature">
+                            <div class="icon-wrapper">
+                                <img
+                                    src="assets/market-research-svgrepo-com.svg"
+                                    alt="Market Insights"
+                                    data-aos="flip-right"
+                                    data-aos-duration="1000">
+                            </div>
+                            <h3 data-aos="flip-up" data-aos-duration="1000">Market Insights</h3>
+                            <p data-aos="fade-in" data-aos-duration="1000">Get instant analysis on market
+                                movements and trends to make informed investment decisions.</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon-wrapper">
+                                <img
+                                    src="assets/statistic-up-svgrepo-com.svg"
+                                    alt="Predictive Analytics"
+                                    data-aos="flip-right"
+                                    data-aos-duration="1000">
+                            </div>
+                            <h3 data-aos="flip-up" data-aos-duration="1000">Predictive Analytics</h3>
+                            <p data-aos="fade-in" data-aos-duration="1000">Our AI uses advanced algorithms
+                                to predict potential market changes, helping you stay ahead of shifts.</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon-wrapper">
+                                <img
+                                    src="assets/notifications-alert-svgrepo-com.svg"
+                                    alt="Portfolio Alerts"
+                                    data-aos="flip-right"
+                                    data-aos-duration="1000">
+                            </div>
+                            <h3 data-aos="flip-up" data-aos-duration="1000">Portfolio Alerts</h3>
+                            <p data-aos="fade-in" data-aos-duration="1000">Receive notifications when your
+                                portfolio requires adjustments based on market conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Security and Privacy -->
+
+            <section class="ai-security">
+                <div class="container">
+                    <h2 data-aos="flip-up" data-aos-duration="1000">AI Security & Privacy</h2>
+                    <p data-aos="fade-in" data-aos-duration="1000">
+                        We prioritize the security and privacy of your financial data. Our AI technology
+                        adheres to the highest standards of data encryption and security protocols to
+                        ensure that your information is safe and protected at all times.
+                    </p>
+                    <p data-aos="fade-in" data-aos-duration="1000">
+                        With AI, you can have confidence that your financial data is processed securely,
+                        with robust safeguards in place to prevent unauthorized access and ensure your
+                        privacy.
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img
+                        src="assets/jpeg-optimizer_Secure_Trading-01-removebg-preview.png"
+                        alt="AI security and privacy">
+                </div>
+            </section>
+
+        </main>
+
+        <!------FOOTER---->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div>
+                        <a href="onboarding.html">
+                            <button class="reg footer-btn">Get An Advisor</button>
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Resources
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FaQs</a>
+                            </li>
+                            <li>
+                                <a href="story.html">Our Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Contact
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="tel:+1234567890">
+                                    +1 (234) 567-890</a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@futurewealth.com" style="text-transform: lowercase;">support@paradigmshift.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class='bx bxl-twitter social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-facebook social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-instagram social-icon'></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy;
+                        <span id="year"></span>
+                        Paradigm Shift. All rights reserved.</p>
+                    <div class="b-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Paradigm Shift. All rights reserved.</p>
-                <div class="b-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms Of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
+        <!------JS SCRIPTS-->
+        <script src="js/index2.js"></script>
 
-    <!------JS SCRIPTS-->
-    <script src="js/index2.js"></script>
-</body>
+        <!-- AOS SCRIPTS -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: function () {
+                    // Disable AOS for screens smaller than 768px
+                    return window.innerWidth < 768;
+                },
+                once: true, // Animations will run only once
+            });
+        </script>
+
+    </body>
 </html>
