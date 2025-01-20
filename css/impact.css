@@ -186,7 +186,7 @@
 }
 
 .text-details li::before {
-    content: "📌";
+    content: "";
     color: #1b5e20;
     margin-right: 0.1vw;
     font-size: 1.2vw;

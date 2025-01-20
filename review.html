@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Shift - What Our Users Say About Us</title>
+
+        <!--------ALL CSS LINKS----->
+
+        <!-------STYLE CSS----->
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/review.css">
+        <!-- Boxicons CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css"
+            rel="stylesheet">
+
+        <!------AOS LINK-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-------FAVICON -->
+        <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
+
+    </head>
+    <body>
+
+        <!-----HEADER AREA---->
+
+        <header>
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
+                </a>
+                <div class="nav__link hide" id="navLinks">
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown1')">our solutions
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown1">
+                            <a href="investment-strategies.html">Investment Strategies</a>
+                            <a href="product-portfolio.html">Product Portfolio</a>
+                            <a href="technology.html">Our Technology</a>
+                            <a href="innovation-lab.html">Innovation Lab</a>
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown2')">about us
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown2">
+                            <a href="story.html">Our Story</a>
+                            <a href="">Our Partners</a>
+                            <a href="vision.html">Our Vision</a>
+                            <a href="mission.html">Mission Statement</a>
+                            <a href="service.html">Service Model</a>
+
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown3')">resources
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown3">
+                            <a href="">Educational guides</a>
+                            <a href="">Finance Tools</a>
+                            <a href="">Roadmap</a>
+                            <a href="">FaQs</a>
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown4')">impact
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown4">
+                            <a href="community.html">Community Stories</a>
+                            <a href="sustainability.html">Sustainability Story</a>
+                            <a href="philanthrophy.html">Philanthropic Vision</a>
+                            <a href="impact.html">Impact Measurement</a>
+                            <a href="review.html">Reviews</a>
+                        </div>
+                    </span>
+                </div>
+
+                <div>
+                    <a href="onboarding.html">
+                        <button class="header-btn">Get An Advisor</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+
+        <main>
+
+            <!-- HEADER -->
+
+            <section class="header">
+                <h1 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">What Our Users Say</h1>
+                <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Hear from
+                    our customers about how our AI-powered financial tools transformed their
+                    financial planning.</p>
+                <div class="hero-rating">
+                    <!-- User Images -->
+                    <div data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000" class="user-images">
+                        <img 
+                       
+                        src="assets/gettyimages-1321081723-612x612.jpg" alt="User 1">
+                        <img
+                        
+                            src="assets/gettyimages-2162083704-612x612.jpg"
+                            alt="User 2"
+                            style="transform: translateX(-0.5vw);">
+                        <img
+                        
+                            src="assets/gettyimages-1431569188-612x612.jpg"
+                            alt="User 3"
+                            style="transform: translateX(-1vw);">
+                        <img
+                        
+                            src="assets/gettyimages-1683003966-612x612.jpg"
+                            alt="User 4"
+                            style="transform: translateX(-1.5vw);">
+                    </div>
+
+                    <!-- Rating Info -->
+                    <div class="rating-info">
+                        <!-- Stars -->
+                        <div class="stars">
+                            <svg
+                                data-aos="fade-in"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewbox="0 0 16 16"
+                                class="bi bi-star-fill">
+                                <path
+                                    d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.32-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.63.283.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg
+                                data-aos="fade-in"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewbox="0 0 16 16"
+                                class="bi bi-star-fill">
+                                <path
+                                    d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.32-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.63.283.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg
+                                data-aos="fade-in"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewbox="0 0 16 16"
+                                class="bi bi-star-fill">
+                                <path
+                                    d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.32-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.63.283.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg
+                                data-aos="fade-in"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewbox="0 0 16 16"
+                                class="bi bi-star-fill">
+                                <path
+                                    d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.32-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.63.283.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg
+                                data-aos="fade-in"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewbox="0 0 16 16"
+                                class="bi bi-star-fill">
+                                <path
+                                    d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.32-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.63.283.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <span
+                            data-aos="fade-in"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                 style="font-size: 1.3vw; font-weight: bolder; line-height: 1.5; margin-left: 0.2vw;">4.8/5</span>
+                        </div>
+
+                        <!-- Text -->
+                        <span
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            class="text">Based on 1,234 reviews</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews section -->
+
+            <section class="featured-stories">
+                <div class="container">
+                    <div class="grid">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “After years of struggling with financial planning, the AI advisor’s clear and
+                                    actionable recommendations turned my debt into a roadmap for savings. I’m now on
+                                    track to buy my first home!”
+                                </p>
+                                <p class="card-author">Sarah T., Seattle, WA</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “Our family-owned business needed better investment strategies. With AI-powered
+                                    insights, we optimized our budget, expanded operations, and increased
+                                    profitability within six months.”
+                                </p>
+                                <p class="card-author">Miguel R., Austin, TX</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “The platform’s predictive models showed me exactly how much I needed to save
+                                    for retirement. I feel confident and prepared for my future, thanks to Paradigm
+                                    Shift AI.”
+                                </p>
+                                <p class="card-author">Linda K., Boston, MA</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “With Paradigm Shift AI, I finally gained control over my finances. The tailored
+                                    recommendations helped me save for my children’s education while growing my
+                                    retirement fund. It’s been life-changing!”
+                                </p>
+                                <p class="card-author">Emily D., Denver, CO</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “As a freelancer, managing irregular income was a nightmare. Paradigm Shift AI
+                                    simplified it by helping me create a flexible budget that works with my
+                                    unpredictable earnings.”
+                                </p>
+                                <p class="card-author">Alex P., San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “The insights provided by the AI platform were a game-changer. I invested
+                                    confidently, knowing my money was working harder for me.”
+                                </p>
+                                <p class="card-author">James W., Chicago, IL</p>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “As a single parent, financial planning always felt overwhelming. Paradigm Shift
+                                    gave me clarity and a path to secure my family’s future.”
+                                </p>
+                                <p class="card-author">Rachel L., Miami, FL</p>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “Before using Paradigm Shift, I never thought I could save for my dream
+                                    vacation. Now I’m counting down the days to explore Europe stress-free.”
+                                </p>
+                                <p class="card-author">Chris B., Portland, OR</p>
+                            </div>
+                        </div>
+                        <!-- Card 9 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “I used to dread checking my bank account. Paradigm Shift AI not only simplified
+                                    my finances but also made budgeting enjoyable!”
+                                </p>
+                                <p class="card-author">Sophia H., Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <!-- Card 10 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “Paradigm Shift showed me how to reduce unnecessary expenses and make my money
+                                    work for me. My savings have doubled in a year!”
+                                </p>
+                                <p class="card-author">Ethan J., Dallas, TX</p>
+                            </div>
+                        </div>
+                        <!-- Card 11 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “With AI-powered guidance, I successfully planned and launched a new business
+                                    without financial stress. The results exceeded my expectations!”
+                                </p>
+                                <p class="card-author">Oliver M., Atlanta, GA</p>
+                            </div>
+                        </div>
+                        <!-- Card 12 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    “Thanks to Paradigm Shift, I uncovered financial opportunities I never knew
+                                    existed. My family and I now feel secure about our future.”
+                                </p>
+                                <p class="card-author">Amelia B., Phoenix, AZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-------IMG BACKGROUND---->
+            <section class="img-section">
+                <div class="img-content">
+                    <img
+                        src="assets/jpeg-optimizer_idea-renewable-energy-energy-saving-energy-saving-light-bulb-tree-growing.jpg"
+                        alt="energy-saving-light-bulb-tree-growing image">
+                </div>
+            </section>
+
+            <!------CTA ---->
+
+            <section
+                class="cta-section"
+                data-aos="flip-left"
+                data-aos-delay="100"
+                data-aos-duration="1000">
+                <div class="cta-content">
+                    <h2 class="cta-heading">Ready To Take Control of Your Financial Future?</h2>
+                    <p class="cta-text">
+                        Let us help you achieve your financial goals with personalized strategies and
+                        expert advice. Schedule a free consultation today to start your journey toward
+                        financial freedom.
+                    </p>
+                    <a href="" class="cta-button">Schedule a Free Consultation</a>
+                </div>
+            </section>
+
+        </main>
+
+        <!------FOOTER---->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div>
+                        <a href="onboarding.html">
+                            <button class="reg footer-btn">Get An Advisor</button>
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Resources
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FaQs</a>
+                            </li>
+                            <li>
+                                <a href="story.html">Our Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Contact
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="tel:+1234567890">
+                                    +1 (234) 567-890</a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@futurewealth.com" style="text-transform: lowercase;">support@paradigmshift.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class='bx bxl-twitter social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-facebook social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-instagram social-icon'></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy;
+                        <span id="year"></span>
+                        Paradigm Shift. All rights reserved.</p>
+                    <div class="b-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!------JS SCRIPTS-->
+        <script src="js/index2.js"></script>
+
+        <!-- AOS SCRIPTS -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: function () {
+                    // Disable AOS for screens smaller than 768px
+                    return window.innerWidth < 768;
+                },
+                once: true, // Animations will run only once
+            });
+        </script>
+
+    </body>
+</html>
