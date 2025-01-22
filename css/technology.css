@@ -104,7 +104,7 @@
 
 .ai-introduction {
     background-color: #f8f9fa;
-    padding: 0 5vw;
+    padding: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,7 +124,27 @@
     font-size: 1.1vw;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 1vw;
+    margin: 1vw 0;
+}
+
+.goals-list {
+    list-style: none;
+    padding: 0;
+}
+
+.goals-list li {
+    font-size: 1.1vw;
+    color: #555;
+    margin: 1vw;
+    line-height: 1.6;
+    position: relative;
+}
+
+.goals-list li::before {
+    content: "✔";
+    color: #1a237e;
+    margin-right: 0.5vw;
+    font-size: 1.2vw;
 }
 
 .img-container {
@@ -319,7 +339,7 @@
 
 .ai-security {
     background-color: #f8f9fa;
-    padding: 0 5vw;
+    padding: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,5 +359,23 @@
     font-size: 1.1vw;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 1vw;
+    margin: 1vw 0;
+}
+
+
+/* Conclusion */
+
+.conclude{
+    padding: 3vw 5vw;
+}
+
+.conclude h3{
+    font-size: 2vw;
+    color: #1a237e;
+    margin-bottom: 0.5vw; 
+}
+
+.conclude p{
+    font-size: 1.1vw;
+    line-height: 1.5;
 }
