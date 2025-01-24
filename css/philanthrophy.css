@@ -40,40 +40,6 @@
     align-items: center;
 }
 
-.text-content{
-    width: 45vw;
-}
-
-.text-content h1{
-    font-size: 2.5vw;
-    color: #1a237e;
-    margin-bottom: 1vw;
-    font-weight:bolder;
-}
-
-.subtext{
-    font-size: 1.1vw;
-    line-height: 1.5;
-    color: black;
-    margin: 0.5vw 0;
-}
-
-.cta-button1 {
-    display: inline-block;
-    padding: 0.8vw 1.5vw;
-    margin-top: 1vw;
-    background-color: #3949ab;
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
-    border-radius: 0.5vw;
-    font-size: 1vw;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button1:hover {
-    background-color: #283593;
-}
 
 .image-container {
     width: 40vw;
@@ -194,4 +160,21 @@
 
 .cta-button:hover {
     background-color: #dac020;
+}
+
+/* Conclusion */
+
+.conclude{
+    padding: 3vw 5vw;
+}
+
+.conclude h3{
+    font-size: 2vw;
+    color: #1a237e;
+    margin-bottom: 0.5vw; 
+}
+
+.conclude p{
+    font-size: 1.1vw;
+    line-height: 1.5;
 }
