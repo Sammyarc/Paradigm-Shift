@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Shift - How to interview a financial advisor</title>
+
+        <!--------ALL CSS LINKS----->
+
+        <!-------STYLE CSS----->
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/interview.css">
+        <!-- Boxicons CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css"
+            rel="stylesheet">
+
+        <!------AOS LINK-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-------FAVICON -->
+        <link rel="icon" type="image/png" href="/assets/paradigm favicon.png">
+
+    </head>
+    <body>
+
+        <!-----HEADER AREA---->
+
+        <header>
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="/assets/svgviewer-png-output.png" alt="Paradigm Shift Logo">
+                </a>
+                <div class="nav__link hide" id="navLinks">
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown1')">our solutions
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown1">
+                            <a href="investment-strategies.html">Investment Strategies</a>
+                            <a href="approach.html">Investment Approach</a>
+                            <a href="product-portfolio.html">Product Portfolio</a>
+                            <a href="technology.html">Our Technology</a>
+                            <a href="innovation-lab.html">Innovation Lab</a>
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown2')">about us
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown2">
+                            <a href="story.html">Our Story</a>
+                            <a href="">Our Partners</a>
+                            <a href="vision.html">Our Vision</a>
+                            <a href="mission.html">Mission Statement</a>
+                            <a href="service.html">Service Model</a>
+
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown3')">resources
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown3">
+                            <a href="wealth-goals.html">What Are Your Wealth Goals?</a>
+                            <a href="why.html">Why Hire A Financial Advisor?</a>
+                            <a href="interview.html">How To Interview A Financial Advisor?</a>
+                            <a href="finance-tools.html">Financial Tools</a>
+                        </div>
+                    </span>
+                    <span class="dropdown">
+                        <a
+                            style="cursor: pointer; display: flex; align-items: center; gap: 0.5vw;"
+                            onclick="toggleDropdown(event, 'dropdown4')">impact
+                            <svg class="d-toggle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                <path
+                                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content" id="dropdown4">
+                            <a href="community.html">Community Stories</a>
+                            <a href="sustainability.html">Sustainability Story</a>
+                            <a href="philanthrophy.html">Philanthropic Vision</a>
+                            <a href="impact.html">Impact Measurement</a>
+                            <a href="review.html">Reviews</a>
+                        </div>
+                    </span>
+                </div>
+
+                <div>
+                    <a href="onboarding.html">
+                        <button class="header-btn">Get An Advisor</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+
+        <main>
+
+            <!-- INTRO SECTION -->
+
+            <section class="interview-header">
+                <div class="interview-overlay"></div>
+                <img
+                    src="assets/blog-images/images (2).jpg"
+                    alt="Interview Header"
+                    class="header-image">
+                <div class="interview-content">
+                    <h1
+                        class="interview-title"
+                        data-aos="flip-right"
+                        data-aos-delay="100"
+                        data-aos-duration="1000">How To Hire A Financial Advisor?</h1>
+                </div>
+            </section>
+
+            <!-- First section -->
+
+            <section class="first">
+                <p data-aos="fade-in" data-aos-duration="1500">Let’s say you find yourself with
+                    wealth—a fair amount of wealth. You could have earned it after years of hard
+                    work, inherited it, or had a lucky break! Maybe you have a job with the
+                    potential to grow and want to start building your wealth. But you don’t want to
+                    leave money in a bank; you want your money to work for you! A financial steward
+                    can guide you to take action today.</p><br/>
+                <p data-aos="fade-in" data-aos-delay="100" data-aos-duration="1500">So, you
+                    start the process of finding a financial advisor and encounter multiple
+                    professional individuals who want to help you. How do you know what questions to
+                    ask? Having a bad wealth advisor means working with someone who doesn’t have
+                    your best interest in mind. This may cause you to lose focus on what’s important
+                    to you and even find it more challenging to fulfill your financial goals.
+                </p><br/>
+                <p data-aos="fade-in" data-aos-delay="100" data-aos-duration="1500">Discover the
+                    breakdown between the first and second advisor interviews and common red flags
+                    to look out for.
+                </p>
+            </section>
+
+            <!--First FaQ section -->
+
+            <section class="faq">
+                <h2 data-aos="flip-up" data-aos-duration="1000">Questions For Your First Advisor Interview</h2>
+                <div class="faq-item">
+                    <div
+                        class="faq-question open"
+                        onclick="toggleAnswer('philosophy')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        What is your firm’s philosophy?
+                    </div>
+                    <div
+                        class="faq-answer open"
+                        id="philosophy"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>Although there is no true “right answer” here, you need a wealth planner who,
+                            at its core, wants to understand your goals, aspirations, risks, and fears
+                            before making any recommendations. We refer to these advisors as
+                            aligned-interest advisors. We are big believers that the value-added of a great
+                            advisor is not to “beat the market” but rather to be your household CFO.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('compensated')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        How do you get compensated?</div>
+                    <div
+                        class="faq-answer"
+                        id="compensated"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>If you want to predict how people will likely behave, you need to understand
+                            their incentives. Knowing how advisors make money can help you identify the
+                            payment options that are most suitable for you. You’ll also be able to establish
+                            the most aligned incentives for the advisor.
+                        </p><br/>
+                        <p>
+                            For instance, if an advisor works at an insurance company and gets paid high
+                            commissions for selling whole life insurance, there’s a good chance it will come
+                            up as a suggestion—even if it’s not necessarily the best product for you.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('planning')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        What financial planning services do you offer?</div>
+                    <div
+                        class="faq-answer"
+                        id="planning"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>Your ideal advisor has expertise in the areas you need the most help with.
+                            For instance, an advisor may focus on Social Security and Medicare, but you’re
+                            30 years old! You may need more help figuring out which home you can afford or
+                            how to reach your long-term goals. Thus, that advisor is probably not the best
+                            match for you!
+                        </p><br/>
+                        <p>
+                            Other examples of financial planning services questions include:
+                        </p>
+                        <ul>
+                            <li>Do you offer investment advice for retirement accounts such as 401(k)s and IRAs?
+                            </li>
+                            <li>Do you offer estate or college planning services?
+                            </li>
+                            <li>How will you help me manage an inheritance or my business?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('investment')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        What is your approach to investment planning?</div>
+                    <div
+                        class="faq-answer"
+                        id="investment"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>There is no perfect answer here, but there are some very good responses and
+                            some very bad responses. The most important thing you want your advisor to have
+                            is a well-thought-out, evidence-based process. If they sound like they are
+                            “winging it” or start discussing their stellar market performance when you ask
+                            this question, run for the hills!
+                        </p><br/>
+                        <p>
+                            Advisors simply don’t have the time to be your household CFO and be great
+                            stock-pickers. Great advisors understand that the key to success is
+                            understanding the required returns to accomplish your goals. If those returns
+                            seem to have a reasonable margin of safety (considering historical return
+                            profiles for a well-diversified portfolio), then — and only then — can they pick
+                            the right mix of assets that strives to deliver YOUR required rate of return
+                            with the minimum portfolio risk possible.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('suitable')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        Why am I a suitable client based on what you know about me?</div>
+                    <div
+                        class="faq-answer"
+                        id="suitable"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>Although this question should only be asked after the advisor has had a good
+                            chance to ask you about yourself, it ultimately cuts right to the heart of the
+                            conversation. Their answer should not only show that they have a good
+                            understanding of your situation but also focus on how they can help improve it
+                            and, ultimately, how you will benefit from it.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('similar')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        Can you give me an example of a time when you helped a similar client make
+                        progress?</div>
+                    <div
+                        class="faq-answer"
+                        id="similar"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>A good indicator of a financial advisor’s expertise is whether they have
+                            experience helping other similar clients. If they fumble over the answer or
+                            don’t provide clear examples, this could indicate that they are not familiar
+                            with working with clients with similar needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('review')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        How often will we review our plan to make sure we’re making the right kind of
+                        progress?</div>
+                    <div class="faq-answer" id="review" data-aos="fade-in" data-aos-duration="1500">
+                        <p>Knowing where you stand financially is important, and you want an advisor who
+                            keeps you in the loop.
+                        </p><br/>
+                        <p>
+                            Ask questions like:
+                        </p>
+                        <ul>
+                            <li>How often do you expect to be in contact with me: once a year, monthly, or more?
+                            </li>
+                            <li>Do you offer web services and portals?</li>
+                            <li>Do you offer insight newsletters and reports?</li>
+                        </ul><br/>
+                        <p>
+                            At this stage, it may also be worth asking for examples of financial plans and
+                            asset allocations. Doing so will allow you to understand how their philosophy
+                            might actually materialize as a financial plan.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--Second FaQ section -->
+
+            <section class="faq">
+                <h2 data-aos="flip-up" data-aos-duration="1000">Questions For Your Second Advisor Interview</h2>
+                <div class="faq-item">
+                    <div
+                        class="faq-question open"
+                        onclick="toggleAnswer('plan')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        Do you have a sample financial plan you can send over?</div>
+                    <div
+                        class="faq-answer open"
+                        id="plan"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>Understanding the quality and value of an advisor’s financial plans can be
+                            the difference between a lackluster advisor and one who wants to accelerate
+                            wealth creation and fulfill financial goals. By looking over a sample, you can
+                            understand what to expect from the plan the financial planner or financial
+                            advisor creates.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('custodian')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        Who is your custodian?</div>
+                    <div
+                        class="faq-answer"
+                        id="custodian"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>A custodian is a bank or reputable brokerage where your investments will be
+                            held. A big red flag here is if the advisor is their own custodian. If your
+                            financial advisor is independent, they will likely work with a large reputable
+                            custodian such as Schwab, Fidelity, TD Ameritrade, Pershing, or Apex.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('economic')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        If I hire you and another economic crash happens, what’s your plan?</div>
+                    <div
+                        class="faq-answer"
+                        id="economic"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>Note that you shouldn’t have to ask this question. If, during your first
+                            call, the advisor hasn’t clarified that they are positioning you for time in the
+                            market instead of timing it, they might not be it! An important benefit of
+                            hiring a wealth advisor is you’re not panic-stricken and worrying but instead
+                            focusing on the long-term, holistic financial plan you’ve put in place with your
+                            advisor.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('process')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        What would the process look like if I decide to hire you?</div>
+                    <div
+                        class="faq-answer"
+                        id="process"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>This is an essential second interview question, so consider saving it for
+                            when you’re seriously considering hiring the advisor.
+                        </p><br/>
+                        <p>
+                            Look for a very well-thought-out process for onboarding you as a client. If they
+                            dilly-dally or talk in circles, it’s a clear flag that they’re trying to “close”
+                            you instead of entering a fruitful relationship.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('hire')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        If I hire you, will I be working with you or somebody else?</div>
+                    <div class="faq-answer" id="hire" data-aos="fade-in" data-aos-duration="1500">
+                        <p>Carefully evaluate your expectations around the relationship. Sometimes, a
+                            financial advisor may work with a team or another advisor. If they are, you’ll
+                            want to know who else will have a hand in your finances.
+                        </p><br/>
+                        <p>
+                            Remember that if you’re interviewing them with the expectation that they will
+                            work directly with you, there should be no doubt about how the relationship will
+                            be structured.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('current')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        If I hire you, will I have to sell my current investments? Will there be tax
+                        implications?</div>
+                    <div
+                        class="faq-answer"
+                        id="current"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>If you own investments outside of an IRA or other tax-qualified account, ask
+                            if the advisor requires you to sell everything and purchase selected
+                            investments. You want to determine whether there will be tax consequences in
+                            transitioning to the advisor managing your assets.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('costs')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        If I hire you, what are my all-in costs?</div>
+                    <div class="faq-answer" id="costs" data-aos="fade-in" data-aos-duration="1500">
+                        <p>During a second meeting, most people ask about fees they will be paying the
+                            advisor without being aware of other costs associated with entering into a
+                            client-advisor relationship. In addition to paying the advisor an “advisory
+                            fee,” you will want to know the underlying “investment expenses.” These are the
+                            fees you will pay for the financial products the advisor picks on your behalf.
+                        </p><br/>
+                        <p>
+                            Some advisors may seem less expensive than others regarding advisor fees, but
+                            the investment expenses may be higher. Consider all-in costs while determining
+                            if the advisor you’re interviewing is right for you.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('retire')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        What happens to our relationship if you retire or leave the firm?</div>
+                    <div class="faq-answer" id="retire" data-aos="fade-in" data-aos-duration="1500">
+                        <p>Once you’ve found the right financial advisor, your relationship with them is
+                            usually for the long haul. That means it’s important you feel comfortable with
+                            them.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div
+                        class="faq-question"
+                        onclick="toggleAnswer('professional')"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <i class='bx bx-plus'></i>
+                        What other professional services do you have as part of your network (such as
+                        accountants, estate attorneys, insurance representatives, mortgage specialists,
+                        etc)?</div>
+                    <div
+                        class="faq-answer"
+                        id="professional"
+                        data-aos="fade-in"
+                        data-aos-duration="1500">
+                        <p>Holistic financial advice rarely exists in a vacuum. Asking this question
+                            allows you to evaluate your potential advisor’s network. If they cannot provide
+                            examples of other potential experts for you to refer to, you may find yourself
+                            grappling with finding another expert should the situation arise.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-------IMG BACKGROUND---->
+            <section class="img-section">
+                <div class="img-content">
+                    <img
+                        src="assets/jpeg-optimizer_idea-renewable-energy-energy-saving-energy-saving-light-bulb-tree-growing.jpg"
+                        alt="energy-saving-light-bulb-tree-growing image">
+                </div>
+            </section>
+
+            <!------CTA ---->
+
+            <section
+                class="cta-section"
+                data-aos="flip-left"
+                data-aos-delay="100"
+                data-aos-duration="1000">
+                <div class="cta-content">
+                    <h2 class="cta-heading">Ready To Take Control of Your Financial Future?</h2>
+                    <p class="cta-text">
+                        Let us help you achieve your financial goals with personalized strategies and
+                        expert advice. Schedule a free consultation today to start your journey toward
+                        financial freedom.
+                    </p>
+                    <a href="" class="cta-button">Schedule a Free Consultation</a>
+                </div>
+            </section>
+
+        </main>
+
+        <!------FOOTER---->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div>
+                        <a href="onboarding.html">
+                            <button class="reg footer-btn">Get An Advisor</button>
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Resources
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FaQs</a>
+                            </li>
+                            <li>
+                                <a href="story.html">Our Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <span class="link-header">
+                            Contact
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="tel:+1234567890">
+                                    +1 (234) 567-890</a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@futurewealth.com" style="text-transform: lowercase;">support@paradigmshift.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class='bx bxl-twitter social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-facebook social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin social-icon'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-instagram social-icon'></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy;
+                        <span id="year"></span>
+                        Paradigm Shift. All rights reserved.</p>
+                    <div class="b-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!------JS SCRIPTS-->
+        <script src="js/index2.js"></script>
+
+        <!-- AOS SCRIPTS -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: function () {
+                    // Disable AOS for screens smaller than 768px
+                    return window.innerWidth < 768;
+                },
+                once: true, // Animations will run only once
+            });
+        </script>
+
+    </body>
+</html>
