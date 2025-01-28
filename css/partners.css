@@ -1,0 +1,178 @@
+.nav__link a {
+    color: #333333;
+}
+
+.nav__link a:hover {
+    color: #4d4d4d;
+}
+
+.nav__link a:hover .d-toggle {
+    fill: #4d4d4d;
+}
+
+
+.d-toggle {
+    fill: #333333;
+}
+
+.header-btn{
+    background: #334097;
+    padding: 0.9vw 1.5vw;
+    color: #fcf6f6;
+    outline: none;
+    font-family: "Altone Trial", sans-serif;
+    font-size: 1.1vw;
+    border: 0.1vw solid #fff;
+    border-radius: 1vw;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+/* header */
+
+.partner-header {
+    position: relative;
+    width: 100%;
+    height: 20vw; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    height: 100%;
+    background-color: rgba(251, 250, 250, 0.196); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.partner-content {
+    position: relative;
+    z-index: 2; /* Ensures content appears above overlay */
+    text-align: center;
+    padding: 0 1vw;
+    color: #1a237e;
+}
+
+.partner-title {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.partner-subtitle {
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .partner-header {
+        height: 25vw;
+    }
+
+    .partner-title {
+        font-size: 4vw;
+    }
+
+    .partner-subtitle {
+        font-size: 1.5vw;
+    }
+
+}
+
+
+/****** BRAND SECTION STYLES  *****/
+
+.brand-section {
+    background: transparent;
+    padding: 2vw 5vw;
+}
+
+.brand-content h2 {
+    text-transform: uppercase;
+    padding: 1vw 0;
+    font-size: 1.4vw;
+    color: rgba(27, 38, 50, .6);
+    width: fit-content;
+    position: relative;
+}
+
+.brand-content h2::after {
+    content: '';
+    display: block;
+    width: 70%;
+    border-bottom: 0.25vw solid #daa520;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.brand-container {
+    overflow: hidden;
+}
+
+.brand-flex {
+    margin: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+.brand-logo {
+    width: 10vw;
+    height: 3vw;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    color: rgba(27, 38, 50, .6);
+}
+
+/* Seamless scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-99.9%);
+    }
+}
+
+.animate-scroll {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}

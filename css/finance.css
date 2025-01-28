@@ -1,0 +1,62 @@
+.nav__link a {
+    color: #333333;
+}
+
+.nav__link a:hover {
+    color: #4d4d4d;
+}
+
+.nav__link a:hover .d-toggle {
+    fill: #4d4d4d;
+}
+
+
+.d-toggle {
+    fill: #333333;
+}
+
+.header-btn{
+    background: #334097;
+    padding: 0.9vw 1.5vw;
+    color: #fcf6f6;
+    outline: none;
+    font-family: "Altone Trial", sans-serif;
+    font-size: 1.1vw;
+    border: 0.1vw solid #fff;
+    border-radius: 1vw;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+/* First section */
+
+.first{
+    padding: 5vw 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first h1{
+    font-size: 3vw;
+    color: #1a237e;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+.first h2 {
+    text-align: left;
+}
+
+.first p{
+    margin-top: 0.5vw;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.api-link{
+    color: #1a237e;
+    font-weight: bold;
+}
