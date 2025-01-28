@@ -353,6 +353,12 @@ header {
 }
 
 .brand-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand-flex {
     margin: 1.5vw;
     display: flex;
     justify-content: space-between;
@@ -378,6 +384,22 @@ header {
     text-transform: uppercase;
     font-size: 1.3vw;
     color: rgba(27, 38, 50, .6);
+}
+
+/* Seamless scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-103%);
+    }
+}
+
+.animate-scroll {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
 }
 
 /******* TAB SECTION *****/
