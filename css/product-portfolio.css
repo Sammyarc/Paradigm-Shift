@@ -71,33 +71,23 @@
     padding: 0 1vw;
 }
 
-.portfolio-title {
-    font-size: 3vw;
+.portfolio-subtitle {
+    font-size: 2vw;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
-.portfolio-subtitle {
-    font-size: 1.2vw;
-    font-weight: 300;
-    margin-top: 0.5rem;
-    letter-spacing: 0.5px;
-}
-
 @media (max-width: 768px) {
     .portfolio-header {
-        height: 40vw;
-    }
-
-    .portfolio-title {
-        font-size: 4vw;
+        height: 25vw;
     }
 
     .portfolio-subtitle {
-        font-size: 1.5vw;
+        font-size: 4vw;
     }
+
 }
 
 /* EDUCATION FINANCIAL GROWTH */
